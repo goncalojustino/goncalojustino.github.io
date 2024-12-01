@@ -135,19 +135,26 @@
 
 @media (max-width: 575px) {
    .u-section-1 {
-    min-height: 156px;
+    min-height: 296px;
   }
 
   .u-section-1 .u-sheet-1 {
     min-height: 546px;
   }
 
-  .u-section-1 .u-layout-wrap-1 {
-    margin-top: -134px;
-    margin-bottom: 60px;
+  .u-section-1 .u-layout-cell-1 {
+    min-height: 167px;
   }
 
-  .u-section-1 .u-layout-cell-1 {
-    min-height: 186px;
+  .u-section-1 .u-container-layout-1 {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .u-section-1 .u-image-1 {
+    height: 168px;
+    margin-right: initial;
+    margin-left: initial;
+    width: auto;
   }
 }
