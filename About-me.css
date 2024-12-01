@@ -36,6 +36,9 @@
   .u-section-1 .u-image-1 {
     width: 340px;
     height: 254px;
+    margin-top: 20px;
+    margin-bottom: -13px;
+    margin-left: -22px;
   }
 }.u-section-2 .u-sheet-1 {
   min-height: 570px;
