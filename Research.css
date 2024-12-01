@@ -374,8 +374,23 @@
     min-height: 235px;
   }
 
+  .u-section-3 .u-layout-cell-1 {
+    min-height: 627px;
+  }
+
+  .u-section-3 .u-container-layout-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-3 .u-text-1 {
+    width: auto;
+  }
+
   .u-section-3 .u-text-2 {
-    margin-right: 76px;
+    width: auto;
+    margin-top: 20px;
+    margin-right: 0;
   }
 
   .u-section-3 .u-layout-cell-2 {
