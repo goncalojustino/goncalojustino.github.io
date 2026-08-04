@@ -12,7 +12,13 @@
   const selectedCategory = new URLSearchParams(location.search).get('category') || 'highlights';
 
   title.textContent = categories[selectedCategory] || categories.highlights;
-  document.querySelector(`.team-tabs a[href="Publications.html?category=${selectedCategory}"]`)?.setAttribute('aria-current', 'page');
+  document.querySelectorAll('.publication-tabs a').forEach((tab) => {
+    tab.removeAttribute('aria-current');
+    tab.classList.remove('is-active');
+  });
+  const activeTab = document.querySelector(`.publication-tabs a[href="Publications.html?category=${selectedCategory}"]`);
+  activeTab?.setAttribute('aria-current', 'page');
+  activeTab?.classList.add('is-active');
 
   Promise.all([fetch('data/publications.json'), fetch('data/orcid-works.json')])
     .then(async ([response, worksResponse]) => {
