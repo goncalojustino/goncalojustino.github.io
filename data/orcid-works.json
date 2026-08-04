@@ -1,15 +1,822 @@
 {
   "orcidId": "0000-0003-4828-4738",
-  "updatedAt": null,
+  "updatedAt": "2026-08-04T20:47:45.833Z",
   "works": [
-    { "sourceId": "doi:10.1016/j.compbiomed.2024.109393", "title": "Comparison of two metabolomics platforms to discover biomarkers in critically ill patients from serum analysis", "year": 2025, "journal": "Computational Biology and Medicine", "link": "https://doi.org/10.1016/j.compbiomed.2024.109393", "type": "journal-article" },
-    { "sourceId": "doi:10.3390/molecules29235672", "title": "The Elusive Biological Activity of Scorpionates: A Useful Scaffold for Cancer Therapy?", "year": 2024, "journal": "Molecules", "link": "https://doi.org/10.3390/molecules29235672", "type": "review" },
-    { "sourceId": "doi:10.3390/molecules28145451", "title": "Exploring the Mechanisms behind the Anti-Tumoral Effects of Model C-Scorpionate Complexes", "year": 2023, "journal": "Molecules", "link": "https://doi.org/10.3390/molecules28145451", "type": "journal-article" },
-    { "sourceId": "doi:10.3390/separations10050314", "title": "An Optimised MS-Based Versatile Untargeted Metabolomics Protocol", "year": 2023, "journal": "Separations", "link": "https://doi.org/10.3390/separations10050314", "type": "journal-article" },
-    { "sourceId": "doi:10.1021/acsomega.3c01370", "title": "The Impact of the Serum Extraction Protocol on Metabolomic Profiling Using UPLC-MS/MS and FTIR Spectroscopy", "year": 2023, "journal": "ACS Omega", "link": "https://doi.org/10.1021/acsomega.3c01370", "type": "journal-article" },
-    { "sourceId": "doi:10.1016/j.xpro.2023.102086", "title": "Protocol to study in vitro drug metabolism and identify montelukast metabolites", "year": 2023, "journal": "STAR Protocols", "link": "https://doi.org/10.1016/j.xpro.2023.102086", "type": "journal-article" },
-    { "sourceId": "doi:10.3390/cancers15010270", "title": "Macrophage Resistance to Ionizing Radiation Exposure Is Accompanied by Decreased Cathepsin D", "year": 2023, "journal": "Cancers", "link": "https://doi.org/10.3390/cancers15010270", "type": "journal-article" },
-    { "sourceId": "doi:10.1016/j.lfs.2022.121056", "title": "The mechanisms underlying montelukast's neuropsychiatric effects", "year": 2022, "journal": "Life Sciences", "link": "https://doi.org/10.1016/j.lfs.2022.121056", "type": "journal-article" },
-    { "sourceId": "doi:10.1016/j.xpro.2022.101753", "title": "Optimized protocol for obtaining and characterizing primary neuron-enriched cultures", "year": 2022, "journal": "STAR Protocols", "link": "https://doi.org/10.1016/j.xpro.2022.101753", "type": "journal-article" }
+    {
+      "sourceId": "doi:10.3390/separations13050134",
+      "title": "Bar Adsorptive Microextraction for Trace Determination of Natural and Semi-Synthetic Cannabinoids in Saliva",
+      "year": 2026,
+      "journal": "Separations",
+      "link": "https://doi.org/10.3390/separations13050134",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "doi:10.3390/metabo16070516",
+      "title": "Metabolomic Signatures of Biotrauma Associated with Mortality in ICU Patients Requiring Invasive Mechanical Ventilation and ECMO",
+      "year": 2026,
+      "journal": "Metabolites",
+      "link": "https://doi.org/10.3390/metabo16070516",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "doi:10.64898/2026.05.15.725322",
+      "title": "Omics analysis of MRSA under antibiotic stress identifies conserved adaptive modules and candidate adjuvant targets",
+      "year": 2026,
+      "journal": "",
+      "link": "https://doi.org/10.64898/2026.05.15.725322",
+      "type": "preprint"
+    },
+    {
+      "sourceId": "doi:10.3390/ph19060836",
+      "title": "Synthesis of Phenyl 2-Acetamidoselenogalactoside Mimetics and Interaction with Amyloid β1–42",
+      "year": 2026,
+      "journal": "Pharmaceuticals",
+      "link": "https://doi.org/10.3390/ph19060836",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "doi:10.3390/molecules30132817",
+      "title": "Insights into the Silver Camphorimine Complexes Interactions with DNA Based on Cyclic Voltammetry and Docking Studies",
+      "year": 2025,
+      "journal": "Molecules",
+      "link": "https://doi.org/10.3390/molecules30132817",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "doi:10.5281/zenodo.18070281",
+      "title": "MaxQuant Windows Scheduler",
+      "year": 2025,
+      "journal": "",
+      "link": "https://zenodo.org/doi/10.5281/zenodo.18070281",
+      "type": "software"
+    },
+    {
+      "sourceId": "doi:10.1039/d4ob01942c",
+      "title": "Monoterpenoid selenophenes derived from (−)-carvone with GPx-like activity",
+      "year": 2025,
+      "journal": "Organic & Biomolecular Chemistry",
+      "link": "https://doi.org/10.1039/D4OB01942C",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "doi:10.1016/j.dyepig.2025.112801",
+      "title": "Optical detection of hydrogen sulfide by Turn-ON chemosensors based on 2-nitro-5,10,15,20-tetraphenylporphyrins",
+      "year": 2025,
+      "journal": "Dyes and Pigments",
+      "link": "https://doi.org/10.1016/j.dyepig.2025.112801",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "doi:10.3390/app15094823",
+      "title": "Predictive Models of Patient Severity in Intensive Care Units Based on Serum Cytokine Profiles: Advancing Rapid Analysis",
+      "year": 2025,
+      "journal": "Applied Sciences",
+      "link": "https://doi.org/10.3390/app15094823",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "doi:10.1016/j.bcp.2025.117048",
+      "title": "Targeting MRSA penicillin-binding protein 2a: structural insights, allosteric mechanisms, and the potential of adjuvant inhibitors",
+      "year": 2025,
+      "journal": "Biochemical Pharmacology",
+      "link": "https://doi.org/10.1016/j.bcp.2025.117048",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "doi:10.22541/au.173840407.75774545/v1",
+      "title": "Targeting MRSA penicillin-binding protein 2a: structural insights, allosteric mechanisms, and the potential of adjuvant inhibitors",
+      "year": 2025,
+      "journal": "",
+      "link": "https://doi.org/10.22541/au.173840407.75774545/v1",
+      "type": "preprint"
+    },
+    {
+      "sourceId": "doi:10.5281/zenodo.18076982",
+      "title": "TempusFugit",
+      "year": 2025,
+      "journal": "",
+      "link": "https://zenodo.org/doi/10.5281/zenodo.18076982",
+      "type": "software"
+    },
+    {
+      "sourceId": "doi:10.21203/rs.3.rs-5290318/v1",
+      "title": "An engineered small ligand activates NK cells and triggers their cytolytic activity",
+      "year": 2024,
+      "journal": "",
+      "link": "https://doi.org/10.21203/rs.3.rs-5290318/v1",
+      "type": "preprint"
+    },
+    {
+      "sourceId": "doi:10.1016/j.compbiomed.2024.109393",
+      "title": "Comparison of two metabolomics-platforms to discover biomarkers in critically ill patients from serum analysis",
+      "year": 2024,
+      "journal": "Computers in Biology and Medicine",
+      "link": "https://doi.org/10.1016/j.compbiomed.2024.109393",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "doi:10.3390/app14146028",
+      "title": "Diclofenac Degradation in Aqueous Solution Using Electron Beam Irradiation and Combined with Nanobubbling",
+      "year": 2024,
+      "journal": "Applied Sciences",
+      "link": "https://doi.org/10.3390/app14146028",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "orcid:178460270",
+      "title": "Discovery of the antimicrobial molecular targets of cyclam-based compounds",
+      "year": 2024,
+      "journal": "CQE Days 2024",
+      "link": "",
+      "type": "conference-poster"
+    },
+    {
+      "sourceId": "orcid:208714077",
+      "title": "Enhancing the preparedness toolbox through a post-omics expedition - unveiling the COVID molecular signature on biochemical pathways",
+      "year": 2024,
+      "journal": "XII National Congress of Biochemistry",
+      "link": "",
+      "type": "conference-abstract"
+    },
+    {
+      "sourceId": "orcid:178460271",
+      "title": "Exploring the anticancer activity of gold(III) C-scorpionates",
+      "year": 2024,
+      "journal": "CQE Days 2024",
+      "link": "",
+      "type": "conference-poster"
+    },
+    {
+      "sourceId": "doi:10.17758/eirai20.f0324111",
+      "title": "Predicting Critically Ill Patients Outcome in the ICU using UHPLC-HRMS Data",
+      "year": 2024,
+      "journal": "3rd International Conference on Challenges in Engineering, Medical, Economics and Education: Research & Solutions (CEMEERS-24a)",
+      "link": "https://doi.org/10.17758/eirai20.f0324111",
+      "type": "conference-paper"
+    },
+    {
+      "sourceId": "doi:10.3390/molecules29235672",
+      "title": "The Elusive Biological Activity of Scorpionates: A Useful Scaffold for Cancer Therapy?",
+      "year": 2024,
+      "journal": "Molecules",
+      "link": "https://doi.org/10.3390/molecules29235672",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "orcid:208714078",
+      "title": "Titanium-catalysed synthesis of urea derivatives",
+      "year": 2024,
+      "journal": "CQE days 2024",
+      "link": "",
+      "type": "conference-poster"
+    },
+    {
+      "sourceId": "orcid:167452969",
+      "title": " Exploring MRSA's drug response: a mass spectrometry multiple omics approach towards new targets",
+      "year": 2023,
+      "journal": "EMBO Young Scientists’ Forum",
+      "link": "",
+      "type": "conference-poster"
+    },
+    {
+      "sourceId": "orcid:167452974",
+      "title": "A mass spectrometry-based multi-omics approach to explore the mechanisms of drug resistance in methicillin-resistant Staphylococcus aureus",
+      "year": 2023,
+      "journal": "6th International Mass Spectrometry School",
+      "link": "",
+      "type": "conference-poster"
+    },
+    {
+      "sourceId": "doi:10.3390/separations10050314",
+      "title": "An Optimised MS-Based Versatile Untargeted Metabolomics Protocol",
+      "year": 2023,
+      "journal": "Separations",
+      "link": "https://publons.com/wos-op/publon/56260588/",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "doi:10.1109/enbeng58165.2023.10175339",
+      "title": "Comparison of Analytical Methods Of Serum Untargeted Metabolomics",
+      "year": 2023,
+      "journal": "Ieee Portuguese Meeting on Bioengineering, Enbeng",
+      "link": "https://publons.com/wos-op/publon/61972980/",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "doi:10.3390/molecules28145451",
+      "title": "Exploring the Mechanisms behind the Anti-Tumoral Effects of Model C-Scorpionate Complexes",
+      "year": 2023,
+      "journal": "Molecules",
+      "link": "https://publons.com/wos-op/publon/60750490/",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "doi:10.20944/preprints202306.0205.v1",
+      "title": "Exploring the Mechanisms Behind the Anti-tumoral Effects of Model C-scorpionate Complexes",
+      "year": 2023,
+      "journal": "",
+      "link": "https://doi.org/10.20944/preprints202306.0205.v1",
+      "type": "preprint"
+    },
+    {
+      "sourceId": "orcid:167452975",
+      "title": "New hit compounds towards cancer ¿ assessing the chemical repertoire",
+      "year": 2023,
+      "journal": "CQE days",
+      "link": "",
+      "type": "conference-poster"
+    },
+    {
+      "sourceId": "doi:10.1016/j.xpro.2023.102086",
+      "title": "Protocol to study in vitro drug metabolism and identify montelukast metabolites from purified enzymes and primary cell cultures by mass spectrometry.",
+      "year": 2023,
+      "journal": "STAR protocols",
+      "link": "https://europepmc.org/articles/PMC9929484",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "doi:10.1021/acsomega.3c01370",
+      "title": "The Impact of the Serum Extraction Protocol on Metabolomic Profiling Using UPLC-MS/MS and FTIR Spectroscopy",
+      "year": 2023,
+      "journal": "ACS Omega",
+      "link": "https://publons.com/wos-op/publon/62099837/",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "doi:10.5281/zenodo.5979655",
+      "title": "A concise introduction to MD simulations with GROMACS",
+      "year": 2022,
+      "journal": "",
+      "link": "https://zenodo.org/record/5979655",
+      "type": "manual"
+    },
+    {
+      "sourceId": "doi:10.5281/zenodo.5979639",
+      "title": "Bioquímica Computacional - Aulas Práticas",
+      "year": 2022,
+      "journal": "",
+      "link": "https://zenodo.org/record/5979639",
+      "type": "manual"
+    },
+    {
+      "sourceId": "doi:10.1101/2022.08.03.502646",
+      "title": "Energy dissipation in early detection of cellular responses to metabolic challenges",
+      "year": 2022,
+      "journal": "",
+      "link": "https://doi.org/10.1101/2022.08.03.502646",
+      "type": "preprint"
+    },
+    {
+      "sourceId": "orcid:167452976",
+      "title": "Finding potential anti-MRSA compounds targeting PBP2a",
+      "year": 2022,
+      "journal": "EuChemS Chemistry Congress 2022",
+      "link": "",
+      "type": "conference-poster"
+    },
+    {
+      "sourceId": "doi:10.20944/preprints202207.0379",
+      "title": "Leukotrienes vs. Montelukast - Activity, Metabolism, and Toxicity Hints for Repurposing",
+      "year": 2022,
+      "journal": "Preprints.org",
+      "link": "https://publons.com/wos-op/publon/56444618/",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "doi:10.20944/preprints202207.0379.v1",
+      "title": "Leukotrienes vs. Montelukast – Activity, Metabolism, and Toxicity Hints for Repurposing",
+      "year": 2022,
+      "journal": "",
+      "link": "https://doi.org/10.20944/preprints202207.0379.v1",
+      "type": "preprint"
+    },
+    {
+      "sourceId": "doi:10.3390/ph15091039",
+      "title": "Leukotrienes vs. Montelukast—Activity, Metabolism, and Toxicity Hints for Repurposing",
+      "year": 2022,
+      "journal": "Pharmaceuticals",
+      "link": "https://doi.org/10.3390/ph15091039",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "doi:10.3390/cancers15010270",
+      "title": "Macrophage Resistance to Ionizing Radiation Exposure Is Accompanied by Decreased Cathepsin D and Increased Transferrin Receptor 1 Expression",
+      "year": 2022,
+      "journal": "Cancers",
+      "link": "https://doi.org/10.3390/cancers15010270",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "doi:10.1016/j.xpro.2022.101753",
+      "title": "Optimized protocol for obtaining and characterizing primary neuron-enriched cultures from embryonic chicken brains.",
+      "year": 2022,
+      "journal": "STAR protocols",
+      "link": "https://europepmc.org/articles/PMC9558106",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "doi:10.5281/zenodo.5979689",
+      "title": "Técnicas de Modelação Aplicadas à Biotecnologia",
+      "year": 2022,
+      "journal": "Zenodo",
+      "link": "https://zenodo.org/record/5979689",
+      "type": "manual"
+    },
+    {
+      "sourceId": "doi:10.1016/j.lfs.2022.121056",
+      "title": "The mechanisms underlying montelukast's neuropsychiatric effects - new insights from a combined metabolic and multiomics approach.",
+      "year": 2022,
+      "journal": "Life sciences",
+      "link": "https://doi.org/10.1016/j.lfs.2022.121056",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "orcid:167452978",
+      "title": "A reappraisal of the regioselectivity and specificity of bacterial-expressed cytochromes P450",
+      "year": 2021,
+      "journal": "Virtual CQE days Spring Edition 2021",
+      "link": "",
+      "type": "conference-poster"
+    },
+    {
+      "sourceId": "orcid:167452970",
+      "title": "Characterization of a novel ferulic acid pathway in Lactococcus lactis",
+      "year": 2021,
+      "journal": "Microbiotec21",
+      "link": "",
+      "type": "conference-poster"
+    },
+    {
+      "sourceId": "doi:10.1038/s41598-021-03382-w",
+      "title": "Flexible ZnO-mAb nanoplatforms for selective peripheral blood mononuclear cell immobilization (vol 10, 15018, 2020)",
+      "year": 2021,
+      "journal": "Scientific Reports",
+      "link": "https://publons.com/wos-op/publon/51320663/",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "orcid:167452977",
+      "title": "Identification of the ferulic acid metabolism in Lactococcus lactis",
+      "year": 2021,
+      "journal": "13th International Symposium on Lactic Acid Bacteria",
+      "link": "",
+      "type": "conference-poster"
+    },
+    {
+      "sourceId": "doi:https://doi.org/10.1016/j.apsusc.2020.147848",
+      "title": "Immobilization of His-tagged proteins on NiO foams for recyclable enzymatic reactors",
+      "year": 2021,
+      "journal": "Applied Surface Science",
+      "link": "https://www.sciencedirect.com/science/article/pii/S0169433220326052",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "doi:10.1002/bmb.21512",
+      "title": "Molecular dynamics simulations and analysis for bioinformatics undergraduate students",
+      "year": 2021,
+      "journal": "Biochemistry and Molecular Biology Education",
+      "link": "https://doi.org/10.1002/bmb.21512",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "orcid:130209518",
+      "title": "Potential pathways involved in Montelukast neurotoxicity: a metabolomics approach",
+      "year": 2021,
+      "journal": "Toxicology Letters",
+      "link": "https://publons.com/wos-op/publon/56444620/",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "orcid:167452971",
+      "title": "Reconstruction of the Metabolic Network of Lactococcus lactis strains IL1403 and LMG 19460",
+      "year": 2021,
+      "journal": "Microbiotec21",
+      "link": "",
+      "type": "conference-poster"
+    },
+    {
+      "sourceId": "doi:10.1038/s41598-020-72133-0",
+      "title": "Flexible ZnO-mAb nanoplatforms for selective peripheral blood mononuclear cell immobilization.",
+      "year": 2020,
+      "journal": "Scientific reports",
+      "link": "https://europepmc.org/articles/PMC7490409",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "orcid:167452979",
+      "title": "Immobilization of drug metabolizing enzymes in a nickel oxide foam: physico-chemical and enzymatic characterization",
+      "year": 2020,
+      "journal": "13º Encontro Nacional de Química Orgânica. 6º Encontro Nacional de Química Terapêutica",
+      "link": "",
+      "type": "conference-poster"
+    },
+    {
+      "sourceId": "doi:10.1016/j.freeradbiomed.2020.10.170",
+      "title": "Metabolic Pathway Deficiencies are Compensated by Higher Energy Dissipation to Maintain Microbiological Growth rate in Saccharomyces cerevisiae",
+      "year": 2020,
+      "journal": "Free Radical Biology and Medicine",
+      "link": "https://publons.com/wos-op/publon/44163686/",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "doi:10.1111/bph.15222",
+      "title": "NKp30 - A prospective target for new cancer immunotherapy strategies.",
+      "year": 2020,
+      "journal": "British journal of pharmacology",
+      "link": "https://doi.org/10.1111/bph.15222",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "orcid:90090216",
+      "title": "Tea - Chemistry and Pharmacology ",
+      "year": 2020,
+      "journal": "InTech Open",
+      "link": "",
+      "type": "book"
+    },
+    {
+      "sourceId": "orcid:167452980",
+      "title": "Building an enzymatic reactor towards a finer in vitro drug metabolism model",
+      "year": 2019,
+      "journal": "XXVI Encontro Nacional da Sociedade Portuguesa de Química",
+      "link": "",
+      "type": "conference-poster"
+    },
+    {
+      "sourceId": "orcid:130209509",
+      "title": "New insights into Montelukast metabolism - possible implications to the drug's adverse effects",
+      "year": 2019,
+      "journal": "Toxicology Letters",
+      "link": "https://publons.com/wos-op/publon/56444621/",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "orcid:167452973",
+      "title": "New matrixes for protein immobilization in enzymatic drug transformations",
+      "year": 2019,
+      "journal": "1st CQE Days",
+      "link": "",
+      "type": "conference-abstract"
+    },
+    {
+      "sourceId": "doi:10.3390/molecules24122306",
+      "title": "Synthesis, Crystal Structure, and Biological Evaluation of Fused Thiazolo[3,2-a]Pyrimidines as New Acetylcholinesterase Inhibitors",
+      "year": 2019,
+      "journal": "Molecules",
+      "link": "http://dx.doi.org/10.3390/molecules24122306",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "doi:10.1016/j.atherosclerosis.2018.06.241",
+      "title": "Antibodies against HDL components improve the diagnostic accuracy between ischemic stroke or coronary artery disease and healthy controls when added to traditional cardiovascular risk factors",
+      "year": 2018,
+      "journal": "Atherosclerosis",
+      "link": "http://dx.doi.org/10.1016/j.atherosclerosis.2018.06.241",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "doi:10.1055/s-0038-1645857",
+      "title": "Antibodies against HDL Components in Ischaemic Stroke and Coronary Artery Disease",
+      "year": 2018,
+      "journal": "Thrombosis and Haemostasis",
+      "link": "http://dx.doi.org/10.1055/s-0038-1645857",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "orcid:130209502",
+      "title": "Inducing the activity of NK cells with NKp30 small organic ligands",
+      "year": 2018,
+      "journal": "Abstracts of Papers of the American Chemical Society",
+      "link": "https://publons.com/wos-op/publon/14992591/",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "orcid:167452981",
+      "title": "Predicting drug metabolites using bacterial-based models",
+      "year": 2018,
+      "journal": "256th ACS National Meeting & Exposition.",
+      "link": "",
+      "type": "conference-poster"
+    },
+    {
+      "sourceId": "orcid:92302214",
+      "title": "Sebenta de Química Orgânica",
+      "year": 2018,
+      "journal": "Instituto Politécnico de Setúbal, Escola Superior de Tecnologia do Barreiro",
+      "link": "",
+      "type": "manual"
+    },
+    {
+      "sourceId": "doi:10.5772/intechopen.73746",
+      "title": "Tea - Chemistry and Pharmacology [Working Title]",
+      "year": 2018,
+      "journal": "IntechOpen",
+      "link": "http://dx.doi.org/10.5772/intechopen.73746",
+      "type": "edited-book"
+    },
+    {
+      "sourceId": "doi:10.5772/65575",
+      "title": "Flavonoids - From Biosynthesis to Human Health",
+      "year": 2017,
+      "journal": "InTech",
+      "link": "http://dx.doi.org/10.5772/65575",
+      "type": "book"
+    },
+    {
+      "sourceId": "doi:10.1002/asia.201700469",
+      "title": "Interaction of [V<sup>IV</sup>O(acac)<inf>2</inf>] with Human Serum Transferrin and Albumin",
+      "year": 2017,
+      "journal": "Chemistry - An Asian Journal",
+      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-85025448120&partnerID=MN8TOARS",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "doi:10.1039/c6ra09627a",
+      "title": "Camphor-based CCR5 blocker lead compounds – a computational and experimental approach",
+      "year": 2016,
+      "journal": "RSC Adv.",
+      "link": "https://doi.org/10.1039/c6ra09627a",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "doi:10.5281/zenodo.5979617",
+      "title": "Química Orgânica",
+      "year": 2015,
+      "journal": "",
+      "link": "https://zenodo.org/record/5979617",
+      "type": "manual"
+    },
+    {
+      "sourceId": "doi:10.5281/zenodo.5979625",
+      "title": "Sebenta de Laboratórios IIIB",
+      "year": 2015,
+      "journal": "",
+      "link": "https://zenodo.org/record/5979625",
+      "type": "manual"
+    },
+    {
+      "sourceId": "doi:10.1021/acs.jmedchem.5b00230",
+      "title": "Selenium-Containing Chrysin and Quercetin Derivatives: Attractive Scaffolds for Cancer Therapy",
+      "year": 2015,
+      "journal": "Journal of Medicinal Chemistry",
+      "link": "https://publons.com/wos-op/publon/4084710/",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "orcid:130209512",
+      "title": "Interaction of therapeutic vanadium complexes with serum proteins",
+      "year": 2014,
+      "journal": "Abstracts of Papers of the American Chemical Society",
+      "link": "https://publons.com/wos-op/publon/18465248/",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "doi:10.1007/s00775-013-1029-x",
+      "title": "Binding of (VO2+)-O-IV to the Fe binding sites of human serum transferrin. A theoretical study",
+      "year": 2013,
+      "journal": "Journal of Biological Inorganic Chemistry",
+      "link": "https://publons.com/wos-op/publon/4084718/",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "doi:10.1021/jp407099c",
+      "title": "Electronic Communication in Linear Oligo(azobenzene) Radical Anions",
+      "year": 2013,
+      "journal": "The Journal of Physical Chemistry A",
+      "link": "https://publons.com/wos-op/publon/3850973/",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "orcid:167452972",
+      "title": "Computational and experimental assessment od the potential role of chalcogenated chrisyn derivatives as antioxidant: a proof-of-concept",
+      "year": 2012,
+      "journal": "6th Spanish-Portuguese-Japanese Organic Chemistry Symposium",
+      "link": "",
+      "type": "conference-poster"
+    },
+    {
+      "sourceId": "doi:10.5772/29152",
+      "title": "Structural Analysis of Flavonoids and Related Compounds - A Review of Spectroscopic Applications",
+      "year": 2012,
+      "journal": "Phytochemicals - a Global Perspective of their Role in Nutrition and Health",
+      "link": "https://publons.com/wos-op/publon/4084717/",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "orcid:130209520",
+      "title": "Computational assessment of the potential role of chalcogenated flavonoids as antioxidants, enzyme inhibitors and cell signalling modulators via computational analysis",
+      "year": 2011,
+      "journal": "Abstracts of Papers of the American Chemical Society",
+      "link": "https://publons.com/wos-op/publon/11121359/",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "orcid:130209516",
+      "title": "Metallocene derivatives as selective estrogen receptor modulators a computational docking to estrogen receptors a and b",
+      "year": 2011,
+      "journal": "Abstracts of Papers of the American Chemical Society",
+      "link": "https://publons.com/wos-op/publon/11121357/",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "doi:10.1021/tx900443z",
+      "title": "Amino Acid Adduct Formation by the Nevirapine Metabolite, 12-Hydroxynevirapine-A Possible Factor in Nevirapine Toxicity",
+      "year": 2010,
+      "journal": "Chemical Research in Toxicology",
+      "link": "https://publons.com/wos-op/publon/4084663/",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "doi:10.1007/s00894-009-0583-1",
+      "title": "Antioxidant mechanisms of Quercetin and Myricetin in the gas phase and in solution - a comparison and validation of semi-empirical methods",
+      "year": 2010,
+      "journal": "Journal of Molecular Modeling",
+      "link": "https://publons.com/wos-op/publon/4084704/",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "doi:10.1179/174329210x12650506623726",
+      "title": "Demethylation of theophylline(1,3-dimethylxanthine) to 1-methylxanthine: the first step of an antioxidising cascade",
+      "year": 2010,
+      "journal": "Redox Report",
+      "link": "https://publons.com/wos-op/publon/4084664/",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "orcid:172873289",
+      "title": "Thermal rearrangement of an N-hydroxyimidazole thiocarbamoyl derivative as a simple entry into the 4-thioimidazole motif",
+      "year": 2010,
+      "journal": "Arkivoc",
+      "link": "https://publons.com/wos-op/publon/4084665/",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "orcid:12753500",
+      "title": "Thermal rearrangement of an N-hydroxyimidazole thiocarbamoyl derivative as a simple entry into the 4-thioimidazole motif",
+      "year": 2010,
+      "journal": "Arkivoc",
+      "link": "",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "orcid:41617244",
+      "title": "Thermal rearrangement of an N-hydroxyimidazole thiocarbamoyl derivative as a simple entry into the 4-thioimidazole motif",
+      "year": 2010,
+      "journal": "Arkivoc",
+      "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-77953406068&partnerID=MN8TOARS",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "doi:10.1002/rcm.3869",
+      "title": "Electrospray ionization tandem mass spectrometry fragmentation of protonated flavone and flavonol aglycones: a re-examination",
+      "year": 2009,
+      "journal": "Rapid Communications in Mass Spectrometry",
+      "link": "https://publons.com/wos-op/publon/4084699/",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "doi:10.1002/jms.1630",
+      "title": "Structure and antioxidant activity of brominated flavonols and flavanones",
+      "year": 2009,
+      "journal": "Journal of Mass Spectrometry",
+      "link": "https://publons.com/wos-op/publon/4084705/",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "doi:10.1038/bjp.2008.46",
+      "title": "Influence of the metabolic profile on the in vivo antioxidant activity of quercetin under a low dosage oral regimen in rats",
+      "year": 2008,
+      "journal": "British Journal of Pharmacology",
+      "link": "https://publons.com/wos-op/publon/4084697/",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "orcid:90109784",
+      "title": "Antioxidantes de Estrutura Catecólica - Metabolismo e Relações Estrutura- Actividade",
+      "year": 2007,
+      "journal": "Universidade de Lisboa Faculdade de Ciências",
+      "link": "",
+      "type": "dissertation-thesis"
+    },
+    {
+      "sourceId": "orcid:130209508",
+      "title": "Flavonoid oxidation by the immune system: Structure-antioxidant activity of nitrated and chlorinated flavonoids",
+      "year": 2007,
+      "journal": "Free Radical Research",
+      "link": "https://publons.com/wos-op/publon/6613819/",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "orcid:130209517",
+      "title": "HOCI produced by human neutrophils scavenged by flavonoids",
+      "year": 2007,
+      "journal": "Free Radical Research",
+      "link": "https://publons.com/wos-op/publon/56444624/",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "orcid:172873284",
+      "title": "HOCl produced by human neutrophils scavenged by flavonoids",
+      "year": 2007,
+      "journal": "Proceedings of the European Meeting of the Society For Free Radical Research International",
+      "link": "https://publons.com/wos-op/publon/70698505/",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "orcid:130209513",
+      "title": "Hypobromous acid scavenging by flavonoids: Antioxidant activity of bromoflavonoids",
+      "year": 2007,
+      "journal": "Free Radical Biology and Medicine",
+      "link": "https://publons.com/wos-op/publon/56444623/",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "orcid:130209519",
+      "title": "Hyporbromous acid scavenging by flavonoids: Antioxidant activity of bromoflavonoids",
+      "year": 2007,
+      "journal": "Free Radical Research",
+      "link": "https://publons.com/wos-op/publon/56444622/",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "orcid:130209515",
+      "title": "The interaction of reactive species and plasmatic antioxidants - A tale of many tales",
+      "year": 2007,
+      "journal": "Free Radical Biology and Medicine",
+      "link": "https://publons.com/wos-op/publon/56444627/",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "doi:10.1021/jf052062k",
+      "title": "Antioxidant activity of a catechol derived from abietic acid",
+      "year": 2006,
+      "journal": "Journal of Agricultural and Food Chemistry",
+      "link": "https://publons.com/wos-op/publon/4084703/",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "orcid:130209514",
+      "title": "The antioxidant activity of flavonoid halides and nitroflavonoids - Improving the response to chronic inflammation",
+      "year": 2005,
+      "journal": "Free Radical Research",
+      "link": "https://publons.com/wos-op/publon/56444626/",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "doi:10.1016/j.abb.2004.09.007",
+      "title": "Plasma quercetin metabolites: structure-antioxidant activity relationships",
+      "year": 2004,
+      "journal": "Archives of Biochemistry and Biophysics",
+      "link": "https://publons.com/wos-op/publon/4084701/",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "orcid:130209507",
+      "title": "On reactive species - A theoretical approach",
+      "year": 2003,
+      "journal": "Free Radical Biology and Medicine",
+      "link": "https://publons.com/wos-op/publon/56444625/",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "orcid:172873286",
+      "title": "Modelling of flavone metabolism <i>in vivo</i>",
+      "year": 2002,
+      "journal": "Free Radical Biology and Medicine",
+      "link": "https://publons.com/wos-op/publon/70698506/",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "orcid:172873280",
+      "title": "Modelling of plasmatic metabolism of peroxynitrite",
+      "year": 2002,
+      "journal": "Free Radical Biology and Medicine",
+      "link": "https://publons.com/wos-op/publon/70698504/",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "orcid:172873285",
+      "title": "Plasma metabolites of quercetin and their antioxidant potential",
+      "year": 2002,
+      "journal": "Free Radical Biology and Medicine",
+      "link": "https://publons.com/wos-op/publon/70698512/",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "doi:10.1080/1071576021000016472",
+      "title": "Structure-antioxidant activity relationships of flavonoids: A re-examination",
+      "year": 2002,
+      "journal": "Free Radical Research",
+      "link": "https://doi.org/10.1080/1071576021000016472",
+      "type": "journal-article"
+    },
+    {
+      "sourceId": "doi:10.22541/au.158629969.98324039",
+      "title": "NKp30 -- a prospective target for new cancer immunotherapy strategies",
+      "year": null,
+      "journal": "Authorea",
+      "link": "http://dx.doi.org/10.22541/au.158629969.98324039",
+      "type": "data-set"
+    }
   ]
 }
