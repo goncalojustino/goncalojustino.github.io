@@ -18,16 +18,21 @@
     };
     const selectedCategory = new URLSearchParams(location.search).get('category');
     const sorted = publications.map((publication) => ({ ...publication, category: categoryFor(publication) })).filter((publication) => !selectedCategory || publication.category === selectedCategory).sort((a, b) => Number(b.year) - Number(a.year) || a.title.localeCompare(b.title));
-    grid.innerHTML = sorted.map((publication) => `
+    grid.innerHTML = sorted.map((publication) => {
+      const image = publication.image || 'images/Borcelle.png';
+      const imageAlt = publication.imageAlt || 'Publication illustration';
+      const summary = publication.summary || 'View the original publication for full details.';
+      return `
       <article class="publication-card${publication.featured ? ' featured' : ''}">
-        <img src="${escape(publication.image)}" alt="${escape(publication.imageAlt || '')}" loading="lazy">
+        <img src="${escape(image)}" alt="${escape(imageAlt)}" loading="lazy">
         <div class="card-content">
           <p class="card-meta">${escape(publication.year)} · ${escape(publication.journal || 'Publication')}</p>
           <h2>${escape(publication.title)}</h2>
-          <p>${escape(publication.summary)}</p>
+          <p>${escape(summary)}</p>
           <a class="button" href="${escape(publication.link)}" target="_blank" rel="noreferrer">Learn more <span aria-hidden="true">↗</span></a>
         </div>
-      </article>`).join('');
+      </article>`;
+    }).join('');
   } catch (error) {
     grid.innerHTML = '<p class="publication-message">The publication list is available when this page is served through the website.</p>';
   }
