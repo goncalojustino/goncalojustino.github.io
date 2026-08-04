@@ -1,1 +1,29 @@
-{"members":[{"name":"Gonçalo C. Justino","role":"Principal Investigator","status":"current","image":"images/PhotoFunia-1733002381.jpg","bio":"Researcher in mass spectrometry, biochemical mechanisms, and computational biochemistry."}]}
+{
+  "members": [
+    {
+      "name": "Gonçalo C. Justino",
+      "role": "Principal Investigator",
+      "status": "current",
+      "image": "images/PhotoFunia-1733002381.jpg",
+      "bio": "Researcher in mass spectrometry, biochemical mechanisms, and computational biochemistry."
+    },
+    {
+      "name": "Artem Petrosian",
+      "role": "PhD Student",
+      "status": "current",
+      "bio": "Research theme: Scorpionates for cancer therapy."
+    },
+    {
+      "name": "Catia Marques",
+      "role": "Former member",
+      "status": "alumni",
+      "nowAt": "Current affiliation to be added"
+    },
+    {
+      "name": "Pedro Rosado",
+      "role": "Former member",
+      "status": "alumni",
+      "nowAt": "Current affiliation to be added"
+    }
+  ]
+}
