@@ -40,8 +40,8 @@
         .sort((a, b) => Number(b.year) - Number(a.year) || a.title.localeCompare(b.title));
 
       grid.innerHTML = shown.length ? shown.map((publication) => {
-        const image = publication.image || 'images/Borcelle.png';
-        const imageAlt = publication.imageAlt || 'Publication illustration';
+        const image = publication.image || 'images/logo26.png';
+        const imageAlt = publication.imageAlt || 'Justino Research Group logo';
         const summary = publication.summary || 'View the original publication for full details.';
         return `<article class="publication-card"><img src="${escape(image)}" alt="${escape(imageAlt)}" loading="lazy"><div class="card-content"><p class="card-meta">${escape(publication.year)} · ${escape(publication.journal || 'Publication')}</p><h2>${escape(publication.title)}</h2><p>${escape(summary)}</p><a class="button" href="${escape(publication.link)}" target="_blank" rel="noreferrer">Learn more <span aria-hidden="true">↗</span></a></div></article>`;
       }).join('') : '<p class="team-empty">No publications have been selected for this category yet.</p>';
