@@ -7,6 +7,7 @@
   const storageKey = 'goncalo-publication-manager-v1';
   let works = [];
   let draft = {};
+  let importedRecordCount = 0;
 
   const readJson = async (url) => {
     const response = await fetch(url);
@@ -18,6 +19,10 @@
   const activeWorks = () => works.filter((work) => draft[work.sourceId]?.selected);
   const saveDraft = () => localStorage.setItem(storageKey, JSON.stringify(draft));
   const updateCount = () => { countElement.textContent = `${activeWorks().length} selected`; };
+  const canonicalWork = (candidates) => [...candidates].sort((left, right) => {
+    const score = (work) => Number(Boolean(work.link)) * 4 + Number(Boolean(work.journal)) * 2 + Number(Boolean(work.year)) + Number(Boolean(work.type));
+    return score(right) - score(left);
+  })[0];
 
   function render() {
     const query = searchElement.value.trim().toLowerCase();
@@ -42,7 +47,7 @@
       summary.addEventListener('input', () => update('summary', summary.value)); image.addEventListener('input', () => update('image', image.value)); imageAlt.addEventListener('input', () => update('imageAlt', imageAlt.value));
       fields.append(label('Short description', summary), label('Image path', image), label('Image description', imageAlt)); card.append(fields); worksElement.append(card);
     }
-    statusElement.textContent = visible.length ? `${visible.length} Works available from ORCID.` : 'No Works match your search.';
+    statusElement.textContent = visible.length ? `${visible.length} unique Works available from ${importedRecordCount} ORCID records.` : 'No Works match your search.';
   }
 
   downloadElement.addEventListener('click', () => {
@@ -55,7 +60,12 @@
     const [orcidData, publicationData] = await Promise.all([readJson('data/orcid-works.json'), readJson('data/publications.json')]);
     const saved = JSON.parse(localStorage.getItem(storageKey) || '{}');
     const existing = Object.fromEntries((publicationData.publications || []).map((publication) => [publication.sourceId, publication]));
-    works = [...(orcidData.works || [])].sort((a, b) => Number(b.year) - Number(a.year) || a.title.localeCompare(b.title));
+    importedRecordCount = (orcidData.works || []).length;
+    const grouped = (orcidData.works || []).reduce((bySourceId, work) => {
+      (bySourceId[work.sourceId] ||= []).push(work);
+      return bySourceId;
+    }, {});
+    works = Object.values(grouped).map(canonicalWork).sort((a, b) => Number(b.year) - Number(a.year) || a.title.localeCompare(b.title));
     draft = Object.fromEntries(works.map((work) => {
       const publication = existing[work.sourceId]; const local = saved[work.sourceId];
       return [work.sourceId, local || (publication ? { selected: true, summary: publication.summary || '', image: publication.image || '', imageAlt: publication.imageAlt || '' } : { selected: false, summary: '', image: '', imageAlt: '' })];
