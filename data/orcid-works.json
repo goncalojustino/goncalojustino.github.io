@@ -1,0 +1,15 @@
+{
+  "orcidId": "0000-0003-4828-4738",
+  "updatedAt": null,
+  "works": [
+    { "sourceId": "doi:10.1016/j.compbiomed.2024.109393", "title": "Comparison of two metabolomics platforms to discover biomarkers in critically ill patients from serum analysis", "year": 2025, "journal": "Computational Biology and Medicine", "link": "https://doi.org/10.1016/j.compbiomed.2024.109393", "type": "journal-article" },
+    { "sourceId": "doi:10.3390/molecules29235672", "title": "The Elusive Biological Activity of Scorpionates: A Useful Scaffold for Cancer Therapy?", "year": 2024, "journal": "Molecules", "link": "https://doi.org/10.3390/molecules29235672", "type": "review" },
+    { "sourceId": "doi:10.3390/molecules28145451", "title": "Exploring the Mechanisms behind the Anti-Tumoral Effects of Model C-Scorpionate Complexes", "year": 2023, "journal": "Molecules", "link": "https://doi.org/10.3390/molecules28145451", "type": "journal-article" },
+    { "sourceId": "doi:10.3390/separations10050314", "title": "An Optimised MS-Based Versatile Untargeted Metabolomics Protocol", "year": 2023, "journal": "Separations", "link": "https://doi.org/10.3390/separations10050314", "type": "journal-article" },
+    { "sourceId": "doi:10.1021/acsomega.3c01370", "title": "The Impact of the Serum Extraction Protocol on Metabolomic Profiling Using UPLC-MS/MS and FTIR Spectroscopy", "year": 2023, "journal": "ACS Omega", "link": "https://doi.org/10.1021/acsomega.3c01370", "type": "journal-article" },
+    { "sourceId": "doi:10.1016/j.xpro.2023.102086", "title": "Protocol to study in vitro drug metabolism and identify montelukast metabolites", "year": 2023, "journal": "STAR Protocols", "link": "https://doi.org/10.1016/j.xpro.2023.102086", "type": "journal-article" },
+    { "sourceId": "doi:10.3390/cancers15010270", "title": "Macrophage Resistance to Ionizing Radiation Exposure Is Accompanied by Decreased Cathepsin D", "year": 2023, "journal": "Cancers", "link": "https://doi.org/10.3390/cancers15010270", "type": "journal-article" },
+    { "sourceId": "doi:10.1016/j.lfs.2022.121056", "title": "The mechanisms underlying montelukast's neuropsychiatric effects", "year": 2022, "journal": "Life Sciences", "link": "https://doi.org/10.1016/j.lfs.2022.121056", "type": "journal-article" },
+    { "sourceId": "doi:10.1016/j.xpro.2022.101753", "title": "Optimized protocol for obtaining and characterizing primary neuron-enriched cultures", "year": 2022, "journal": "STAR Protocols", "link": "https://doi.org/10.1016/j.xpro.2022.101753", "type": "journal-article" }
+  ]
+}

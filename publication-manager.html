@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Manage publications | Gonçalo C. Justino</title>
+    <link rel="stylesheet" href="publication-manager.css">
+  </head>
+  <body>
+    <main class="manager-shell">
+      <a class="back-link" href="Publications-preview.html">← View publication preview</a>
+      <header>
+        <p class="eyebrow">Private editing tool</p>
+        <h1>Manage publications</h1>
+        <p>Choose the public Works to feature, then add the short description and image that should appear on the website.</p>
+      </header>
+
+      <section class="workflow-note" aria-label="How the manager works">
+        <strong>How it works:</strong> ORCID sync updates this list. Your choices and card content are exported to <code>data/publications.json</code>, which drives the publication preview.
+      </section>
+
+      <div class="toolbar">
+        <label class="search-label">Search Works <input id="search" type="search" placeholder="Title, journal, or year"></label>
+        <p id="selection-count" class="selection-count" aria-live="polite"></p>
+        <button id="download" type="button">Download selected publications</button>
+      </div>
+
+      <p id="status" class="status" aria-live="polite">Loading Works…</p>
+      <section id="works" class="works" aria-label="ORCID Works"></section>
+    </main>
+    <script src="publication-manager.js"></script>
+  </body>
+</html>

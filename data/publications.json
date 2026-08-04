@@ -1,0 +1,96 @@
+{
+  "updatedAt": "2026-08-04T00:00:00.000Z",
+  "publications": [
+    {
+      "sourceId": "doi:10.1016/j.compbiomed.2024.109393",
+      "title": "Comparison of two metabolomics platforms to discover biomarkers in critically ill patients from serum analysis",
+      "year": 2025,
+      "journal": "Computational Biology and Medicine",
+      "link": "https://doi.org/10.1016/j.compbiomed.2024.109393",
+      "summary": "Compares UHPLC-HRMS and FTIR approaches for identifying serum biomarkers linked to ventilation needs and mortality in intensive-care patients.",
+      "image": "images/1-s2.0-S0010482524014781-gr4.jpg",
+      "imageAlt": "Metabolomics data visualisation",
+      "featured": true
+    },
+    {
+      "sourceId": "doi:10.3390/molecules29235672",
+      "title": "The Elusive Biological Activity of Scorpionates: A Useful Scaffold for Cancer Therapy?",
+      "year": 2024,
+      "journal": "Molecules",
+      "link": "https://www.mdpi.com/1420-3049/29/23/5672",
+      "summary": "A review of scorpionate complexes and their potential as selective next-generation anticancer agents.",
+      "image": "images/vf_GA2.png",
+      "imageAlt": "Molecular structure illustration"
+    },
+    {
+      "sourceId": "doi:10.3390/molecules28145451",
+      "title": "Exploring the Mechanisms behind the Anti-Tumoral Effects of Model C-Scorpionate Complexes",
+      "year": 2023,
+      "journal": "Molecules",
+      "link": "https://doi.org/10.3390/molecules28145451",
+      "summary": "Studies the cytotoxic, anti-migration, and metabolic effects of iron and cobalt scorpionate complexes in cancer cell models.",
+      "image": "images/molecules-28-05451-g001-550.jpg",
+      "imageAlt": "Scientific diagram of C-scorpionate complexes"
+    },
+    {
+      "sourceId": "doi:10.3390/separations10050314",
+      "title": "An Optimised MS-Based Versatile Untargeted Metabolomics Protocol",
+      "year": 2023,
+      "journal": "Separations",
+      "link": "https://doi.org/10.3390/separations10050314",
+      "summary": "A practical high-resolution mass-spectrometry workflow for untargeted metabolomics across cell, animal, and human samples.",
+      "image": "images/separations-10-00314-ag.png",
+      "imageAlt": "Mass spectrometry workflow diagram"
+    },
+    {
+      "sourceId": "doi:10.1021/acsomega.3c01370",
+      "title": "The Impact of the Serum Extraction Protocol on Metabolomic Profiling Using UPLC-MS/MS and FTIR Spectroscopy",
+      "year": 2023,
+      "journal": "ACS Omega",
+      "link": "https://doi.org/10.1021/acsomega.3c01370",
+      "summary": "Evaluates how serum extraction choices affect reproducibility, analytical output, and outcome prediction in metabolomics.",
+      "image": "images/images_large_ao3c01370_0005.jpeg",
+      "imageAlt": "Serum extraction and metabolomics analysis diagram"
+    },
+    {
+      "sourceId": "doi:10.1016/j.xpro.2023.102086",
+      "title": "Protocol to study in vitro drug metabolism and identify montelukast metabolites",
+      "year": 2023,
+      "journal": "STAR Protocols",
+      "link": "https://doi.org/10.1016/j.xpro.2023.102086",
+      "summary": "A step-by-step experimental and mass-spectrometry protocol for investigating drug metabolism in purified enzymes and cell cultures.",
+      "image": "images/1-s2.0-S2666166723000448-fx1.jpg",
+      "imageAlt": "Mass spectrometry protocol figure"
+    },
+    {
+      "sourceId": "doi:10.3390/cancers15010270",
+      "title": "Macrophage Resistance to Ionizing Radiation Exposure Is Accompanied by Decreased Cathepsin D",
+      "year": 2023,
+      "journal": "Cancers",
+      "link": "https://doi.org/10.3390/cancers15010270",
+      "summary": "Investigates how macrophages respond to radiation exposure and identifies molecular changes relevant to tumour radioresistance.",
+      "image": "images/cancers-15-00270-ag.png",
+      "imageAlt": "Macrophage radiation-response scientific figure"
+    },
+    {
+      "sourceId": "doi:10.1016/j.lfs.2022.121056",
+      "title": "The mechanisms underlying montelukast's neuropsychiatric effects",
+      "year": 2022,
+      "journal": "Life Sciences",
+      "link": "https://doi.org/10.1016/j.lfs.2022.121056",
+      "summary": "A combined metabolomics and proteomics study exploring the biological basis of adverse neuropsychiatric effects associated with montelukast.",
+      "image": "images/1-s2.0-S0024320522007561-ga1_lrg.jpg",
+      "imageAlt": "Multiomics illustration"
+    },
+    {
+      "sourceId": "doi:10.1016/j.xpro.2022.101753",
+      "title": "Optimized protocol for obtaining and characterizing primary neuron-enriched cultures",
+      "year": 2022,
+      "journal": "STAR Protocols",
+      "link": "https://doi.org/10.1016/j.xpro.2022.101753",
+      "summary": "An accessible method for producing and assessing neuron-enriched cell cultures from embryonic chicken brains.",
+      "image": "images/1-s2.0-S2666166722006335-fx1_lrg.jpg",
+      "imageAlt": "Neuron culture protocol figure"
+    }
+  ]
+}
