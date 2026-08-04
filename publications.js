@@ -3,10 +3,21 @@
   const escape = (value) => String(value ?? '').replace(/[&<>'"]/g, (character) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' })[character]);
 
   try {
-    const response = await fetch('data/publications.json');
+    const [response, worksResponse] = await Promise.all([fetch('data/publications.json'), fetch('data/orcid-works.json')]);
     if (!response.ok) throw new Error('Publication data could not be loaded.');
     const { publications = [] } = await response.json();
-    const sorted = [...publications].sort((a, b) => Number(b.year) - Number(a.year) || a.title.localeCompare(b.title));
+    const { works = [] } = worksResponse.ok ? await worksResponse.json() : { works: [] };
+    const typeById = new Map(works.map((work) => [work.sourceId, work.type]));
+    const categoryFor = (publication) => {
+      if (publication.category) return publication.category;
+      const type = typeById.get(publication.sourceId);
+      if (type === 'journal-article' || type === 'review' || type === 'preprint') return 'articles';
+      if (['book', 'book-chapter', 'edited-book'].includes(type)) return 'books';
+      if (['software', 'data-set'].includes(type)) return 'software';
+      return 'other';
+    };
+    const selectedCategory = new URLSearchParams(location.search).get('category');
+    const sorted = publications.map((publication) => ({ ...publication, category: categoryFor(publication) })).filter((publication) => !selectedCategory || publication.category === selectedCategory).sort((a, b) => Number(b.year) - Number(a.year) || a.title.localeCompare(b.title));
     grid.innerHTML = sorted.map((publication) => `
       <article class="publication-card${publication.featured ? ' featured' : ''}">
         <img src="${escape(publication.image)}" alt="${escape(publication.imageAlt || '')}" loading="lazy">
