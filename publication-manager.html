@@ -21,9 +21,16 @@
       </section>
 
       <div class="toolbar">
-        <label class="search-label">Search Works <input id="search" type="search" placeholder="Title, journal, or year"></label>
-        <p id="selection-count" class="selection-count" aria-live="polite"></p>
-        <button id="download" type="button">Download selected publications</button>
+        <div class="filters" aria-label="Filter Works">
+          <label class="search-label">Search Works <input id="search" type="search" placeholder="Title or journal"></label>
+          <label class="search-label">Work type <select id="type-filter"><option value="">All types</option></select></label>
+          <label class="search-label">Year <select id="year-filter"><option value="">All years</option></select></label>
+          <button id="clear-filters" class="secondary-button" type="button">Clear filters</button>
+        </div>
+        <div class="toolbar-actions">
+          <p id="selection-count" class="selection-count" aria-live="polite"></p>
+          <button id="download" type="button">Download selected publications</button>
+        </div>
       </div>
 
       <p id="status" class="status" aria-live="polite">Loading Works…</p>

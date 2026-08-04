@@ -2,11 +2,15 @@
   const worksElement = document.querySelector('#works');
   const statusElement = document.querySelector('#status');
   const searchElement = document.querySelector('#search');
+  const typeFilterElement = document.querySelector('#type-filter');
+  const yearFilterElement = document.querySelector('#year-filter');
+  const clearFiltersElement = document.querySelector('#clear-filters');
   const countElement = document.querySelector('#selection-count');
   const downloadElement = document.querySelector('#download');
   const storageKey = 'goncalo-publication-manager-v1';
   let works = [];
   let draft = {};
+  let importedRecordCount = 0;
 
   const readJson = async (url) => {
     const response = await fetch(url);
@@ -18,10 +22,26 @@
   const activeWorks = () => works.filter((work) => draft[work.sourceId]?.selected);
   const saveDraft = () => localStorage.setItem(storageKey, JSON.stringify(draft));
   const updateCount = () => { countElement.textContent = `${activeWorks().length} selected`; };
+  const canonicalWork = (candidates) => [...candidates].sort((left, right) => {
+    const score = (work) => Number(Boolean(work.link)) * 4 + Number(Boolean(work.journal)) * 2 + Number(Boolean(work.year)) + Number(Boolean(work.type));
+    return score(right) - score(left);
+  })[0];
+  const workTypeLabel = (type) => type.split('-').map((word) => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+
+  function populateFilters() {
+    const types = [...new Set(works.map((work) => work.type).filter(Boolean))].sort();
+    const years = [...new Set(works.map((work) => work.year).filter(Boolean))].sort((left, right) => right - left);
+    typeFilterElement.replaceChildren(new Option('All types', ''));
+    yearFilterElement.replaceChildren(new Option('All years', ''));
+    for (const type of types) typeFilterElement.add(new Option(workTypeLabel(type), type));
+    for (const year of years) yearFilterElement.add(new Option(String(year), String(year)));
+  }
 
   function render() {
     const query = searchElement.value.trim().toLowerCase();
-    const visible = works.filter((work) => [work.title, work.journal, work.year, work.type].join(' ').toLowerCase().includes(query));
+    const type = typeFilterElement.value;
+    const year = yearFilterElement.value;
+    const visible = works.filter((work) => [work.title, work.journal, work.year, work.type].join(' ').toLowerCase().includes(query) && (!type || work.type === type) && (!year || String(work.year) === year));
     worksElement.replaceChildren();
     for (const work of visible) {
       const record = draft[work.sourceId] ?? { selected: false, summary: '', image: '', imageAlt: '' };
@@ -42,7 +62,7 @@
       summary.addEventListener('input', () => update('summary', summary.value)); image.addEventListener('input', () => update('image', image.value)); imageAlt.addEventListener('input', () => update('imageAlt', imageAlt.value));
       fields.append(label('Short description', summary), label('Image path', image), label('Image description', imageAlt)); card.append(fields); worksElement.append(card);
     }
-    statusElement.textContent = visible.length ? `${visible.length} Works available from ORCID.` : 'No Works match your search.';
+    statusElement.textContent = visible.length ? `${visible.length} of ${works.length} unique Works available from ${importedRecordCount} ORCID records.` : 'No Works match your filters.';
   }
 
   downloadElement.addEventListener('click', () => {
@@ -55,11 +75,21 @@
     const [orcidData, publicationData] = await Promise.all([readJson('data/orcid-works.json'), readJson('data/publications.json')]);
     const saved = JSON.parse(localStorage.getItem(storageKey) || '{}');
     const existing = Object.fromEntries((publicationData.publications || []).map((publication) => [publication.sourceId, publication]));
-    works = [...(orcidData.works || [])].sort((a, b) => Number(b.year) - Number(a.year) || a.title.localeCompare(b.title));
+    importedRecordCount = (orcidData.works || []).length;
+    const grouped = (orcidData.works || []).reduce((bySourceId, work) => {
+      (bySourceId[work.sourceId] ||= []).push(work);
+      return bySourceId;
+    }, {});
+    works = Object.values(grouped).map(canonicalWork).sort((a, b) => Number(b.year) - Number(a.year) || a.title.localeCompare(b.title));
     draft = Object.fromEntries(works.map((work) => {
       const publication = existing[work.sourceId]; const local = saved[work.sourceId];
       return [work.sourceId, local || (publication ? { selected: true, summary: publication.summary || '', image: publication.image || '', imageAlt: publication.imageAlt || '' } : { selected: false, summary: '', image: '', imageAlt: '' })];
     }));
-    searchElement.addEventListener('input', render); updateCount(); render();
+    populateFilters();
+    searchElement.addEventListener('input', render);
+    typeFilterElement.addEventListener('change', render);
+    yearFilterElement.addEventListener('change', render);
+    clearFiltersElement.addEventListener('click', () => { searchElement.value = ''; typeFilterElement.value = ''; yearFilterElement.value = ''; render(); });
+    updateCount(); render();
   } catch (error) { statusElement.textContent = `Unable to load the manager data: ${error.message}`; }
 })();
