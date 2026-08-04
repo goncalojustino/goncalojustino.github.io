@@ -2,6 +2,9 @@
   const worksElement = document.querySelector('#works');
   const statusElement = document.querySelector('#status');
   const searchElement = document.querySelector('#search');
+  const typeFilterElement = document.querySelector('#type-filter');
+  const yearFilterElement = document.querySelector('#year-filter');
+  const clearFiltersElement = document.querySelector('#clear-filters');
   const countElement = document.querySelector('#selection-count');
   const downloadElement = document.querySelector('#download');
   const storageKey = 'goncalo-publication-manager-v1';
@@ -23,10 +26,22 @@
     const score = (work) => Number(Boolean(work.link)) * 4 + Number(Boolean(work.journal)) * 2 + Number(Boolean(work.year)) + Number(Boolean(work.type));
     return score(right) - score(left);
   })[0];
+  const workTypeLabel = (type) => type.split('-').map((word) => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+
+  function populateFilters() {
+    const types = [...new Set(works.map((work) => work.type).filter(Boolean))].sort();
+    const years = [...new Set(works.map((work) => work.year).filter(Boolean))].sort((left, right) => right - left);
+    typeFilterElement.replaceChildren(new Option('All types', ''));
+    yearFilterElement.replaceChildren(new Option('All years', ''));
+    for (const type of types) typeFilterElement.add(new Option(workTypeLabel(type), type));
+    for (const year of years) yearFilterElement.add(new Option(String(year), String(year)));
+  }
 
   function render() {
     const query = searchElement.value.trim().toLowerCase();
-    const visible = works.filter((work) => [work.title, work.journal, work.year, work.type].join(' ').toLowerCase().includes(query));
+    const type = typeFilterElement.value;
+    const year = yearFilterElement.value;
+    const visible = works.filter((work) => [work.title, work.journal, work.year, work.type].join(' ').toLowerCase().includes(query) && (!type || work.type === type) && (!year || String(work.year) === year));
     worksElement.replaceChildren();
     for (const work of visible) {
       const record = draft[work.sourceId] ?? { selected: false, summary: '', image: '', imageAlt: '' };
@@ -47,7 +62,7 @@
       summary.addEventListener('input', () => update('summary', summary.value)); image.addEventListener('input', () => update('image', image.value)); imageAlt.addEventListener('input', () => update('imageAlt', imageAlt.value));
       fields.append(label('Short description', summary), label('Image path', image), label('Image description', imageAlt)); card.append(fields); worksElement.append(card);
     }
-    statusElement.textContent = visible.length ? `${visible.length} unique Works available from ${importedRecordCount} ORCID records.` : 'No Works match your search.';
+    statusElement.textContent = visible.length ? `${visible.length} of ${works.length} unique Works available from ${importedRecordCount} ORCID records.` : 'No Works match your filters.';
   }
 
   downloadElement.addEventListener('click', () => {
@@ -70,6 +85,11 @@
       const publication = existing[work.sourceId]; const local = saved[work.sourceId];
       return [work.sourceId, local || (publication ? { selected: true, summary: publication.summary || '', image: publication.image || '', imageAlt: publication.imageAlt || '' } : { selected: false, summary: '', image: '', imageAlt: '' })];
     }));
-    searchElement.addEventListener('input', render); updateCount(); render();
+    populateFilters();
+    searchElement.addEventListener('input', render);
+    typeFilterElement.addEventListener('change', render);
+    yearFilterElement.addEventListener('change', render);
+    clearFiltersElement.addEventListener('click', () => { searchElement.value = ''; typeFilterElement.value = ''; yearFilterElement.value = ''; render(); });
+    updateCount(); render();
   } catch (error) { statusElement.textContent = `Unable to load the manager data: ${error.message}`; }
 })();
