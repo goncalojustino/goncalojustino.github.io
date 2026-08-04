@@ -10,10 +10,17 @@
   <body>
     <main class="page">
       <p class="eyebrow">Research output</p>
-      <h1>Selected publications</h1>
+      <h1 id="publication-title">Publication highlights</h1>
       <p class="lead">A curated overview of work in metabolomics, drug discovery, and cancer research.</p>
-      <a class="button" href="https://orcid.org/0000-0003-4828-4738" target="_blank" rel="noreferrer">View the full list on ORCID <span aria-hidden="true">↗</span></a>
+      <nav class="team-tabs" aria-label="Publication categories">
+        <a href="Publications.html?category=highlights">Highlights</a>
+        <a href="Publications.html?category=articles">Journal articles</a>
+        <a href="Publications.html?category=books">Books &amp; chapters</a>
+        <a href="Publications.html?category=covers">Covers</a>
+        <a href="Publications.html?category=software">Software &amp; datasets</a>
+      </nav>
       <section class="grid publication-grid" id="publication-grid" aria-label="Selected publications" aria-live="polite"></section>
+      <a class="button" href="https://orcid.org/0000-0003-4828-4738" target="_blank" rel="noreferrer">View the full list on ORCID <span aria-hidden="true">↗</span></a>
     </main>
     <script src="publications.js"></script>
     <script src="site.js"></script>

@@ -44,7 +44,7 @@
     const visible = works.filter((work) => [work.title, work.journal, work.year, work.type].join(' ').toLowerCase().includes(query) && (!type || work.type === type) && (!year || String(work.year) === year));
     worksElement.replaceChildren();
     for (const work of visible) {
-      const record = draft[work.sourceId] ?? { selected: false, summary: '', image: '', imageAlt: '' };
+      const record = draft[work.sourceId] ?? { selected: false, featured: false, summary: '', image: '', imageAlt: '' };
       const card = document.createElement('article'); card.className = 'work';
       const top = document.createElement('div'); top.className = 'work-top';
       const checkbox = input('checkbox'); checkbox.className = 'select-work'; checkbox.checked = record.selected;
@@ -58,9 +58,10 @@
       const summary = document.createElement('textarea'); summary.value = record.summary; summary.placeholder = 'Short description for the website card';
       const image = input('text', record.image); image.placeholder = 'images/example.jpg';
       const imageAlt = input('text', record.imageAlt); imageAlt.placeholder = 'Brief image description';
+      const featured = input('checkbox'); featured.checked = Boolean(record.featured); featured.setAttribute('aria-label', `Add ${work.title} to Publication Highlights`);
       const update = (key, value) => { draft[work.sourceId] = { ...(draft[work.sourceId] ?? record), [key]: value }; saveDraft(); };
-      summary.addEventListener('input', () => update('summary', summary.value)); image.addEventListener('input', () => update('image', image.value)); imageAlt.addEventListener('input', () => update('imageAlt', imageAlt.value));
-      fields.append(label('Short description', summary), label('Image path', image), label('Image description', imageAlt)); card.append(fields); worksElement.append(card);
+      summary.addEventListener('input', () => update('summary', summary.value)); image.addEventListener('input', () => update('image', image.value)); imageAlt.addEventListener('input', () => update('imageAlt', imageAlt.value)); featured.addEventListener('change', () => update('featured', featured.checked));
+      fields.append(label('Short description', summary), label('Image path', image), label('Image description', imageAlt), label('Publication Highlight', featured)); card.append(fields); worksElement.append(card);
     }
     statusElement.textContent = visible.length ? `${visible.length} of ${works.length} unique Works available from ${importedRecordCount} ORCID records.` : 'No Works match your filters.';
   }
@@ -83,7 +84,7 @@
     works = Object.values(grouped).map(canonicalWork).sort((a, b) => Number(b.year) - Number(a.year) || a.title.localeCompare(b.title));
     draft = Object.fromEntries(works.map((work) => {
       const publication = existing[work.sourceId]; const local = saved[work.sourceId];
-      return [work.sourceId, local || (publication ? { selected: true, summary: publication.summary || '', image: publication.image || '', imageAlt: publication.imageAlt || '' } : { selected: false, summary: '', image: '', imageAlt: '' })];
+      return [work.sourceId, local || (publication ? { selected: true, featured: Boolean(publication.featured), summary: publication.summary || '', image: publication.image || '', imageAlt: publication.imageAlt || '' } : { selected: false, featured: false, summary: '', image: '', imageAlt: '' })];
     }));
     populateFilters();
     searchElement.addEventListener('input', render);
