@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T21:24:18.526Z",
+  "updatedAt": "2026-08-04T23:21:01.328Z",
   "publications": [
     {
       "sourceId": "doi:10.3390/separations13050134",
@@ -7,6 +7,7 @@
       "year": 2026,
       "journal": "Separations",
       "link": "https://doi.org/10.3390/separations13050134",
+      "featured": false,
       "summary": "",
       "image": "",
       "imageAlt": ""
@@ -17,6 +18,7 @@
       "year": 2026,
       "journal": "Metabolites",
       "link": "https://doi.org/10.3390/metabo16070516",
+      "featured": false,
       "summary": "",
       "image": "",
       "imageAlt": ""
@@ -27,6 +29,7 @@
       "year": 2026,
       "journal": "",
       "link": "https://doi.org/10.64898/2026.05.15.725322",
+      "featured": false,
       "summary": "",
       "image": "",
       "imageAlt": ""
@@ -37,6 +40,7 @@
       "year": 2026,
       "journal": "Pharmaceuticals",
       "link": "https://www.mdpi.com/1424-8247/19/6/836",
+      "featured": false,
       "summary": "",
       "image": "",
       "imageAlt": ""
@@ -47,6 +51,7 @@
       "year": 2025,
       "journal": "Molecules",
       "link": "https://doi.org/10.3390/molecules30132817",
+      "featured": false,
       "summary": "",
       "image": "",
       "imageAlt": ""
@@ -57,6 +62,7 @@
       "year": 2025,
       "journal": "Organic & Biomolecular Chemistry",
       "link": "https://doi.org/10.1039/D4OB01942C",
+      "featured": false,
       "summary": "",
       "image": "",
       "imageAlt": ""
@@ -67,6 +73,7 @@
       "year": 2025,
       "journal": "Dyes and Pigments",
       "link": "https://doi.org/10.1016/j.dyepig.2025.112801",
+      "featured": false,
       "summary": "",
       "image": "",
       "imageAlt": ""
@@ -77,6 +84,7 @@
       "year": 2025,
       "journal": "Applied Sciences",
       "link": "https://doi.org/10.3390/app15094823",
+      "featured": false,
       "summary": "",
       "image": "",
       "imageAlt": ""
@@ -87,6 +95,7 @@
       "year": 2025,
       "journal": "Biochemical Pharmacology",
       "link": "https://doi.org/10.1016/j.bcp.2025.117048",
+      "featured": true,
       "summary": "",
       "image": "",
       "imageAlt": ""
@@ -97,6 +106,7 @@
       "year": 2024,
       "journal": "Computers in Biology and Medicine",
       "link": "https://doi.org/10.1016/j.compbiomed.2024.109393",
+      "featured": true,
       "summary": "Compares UHPLC-HRMS and FTIR approaches for identifying serum biomarkers linked to ventilation needs and mortality in intensive-care patients.",
       "image": "images/1-s2.0-S0010482524014781-gr4.jpg",
       "imageAlt": "Metabolomics data visualisation"
@@ -107,6 +117,7 @@
       "year": 2024,
       "journal": "Applied Sciences",
       "link": "https://doi.org/10.3390/app14146028",
+      "featured": false,
       "summary": "",
       "image": "",
       "imageAlt": ""
@@ -117,6 +128,7 @@
       "year": 2024,
       "journal": "Molecules",
       "link": "https://doi.org/10.3390/molecules29235672",
+      "featured": false,
       "summary": "A review of scorpionate complexes and their potential as selective next-generation anticancer agents.",
       "image": "images/vf_GA2.png",
       "imageAlt": "Molecular structure illustration"
@@ -127,6 +139,7 @@
       "year": 2023,
       "journal": "Separations",
       "link": "https://publons.com/wos-op/publon/56260588/",
+      "featured": false,
       "summary": "A practical high-resolution mass-spectrometry workflow for untargeted metabolomics across cell, animal, and human samples.",
       "image": "images/separations-10-00314-ag.png",
       "imageAlt": "Mass spectrometry workflow diagram"
@@ -137,6 +150,7 @@
       "year": 2023,
       "journal": "Molecules",
       "link": "https://publons.com/wos-op/publon/60750490/",
+      "featured": false,
       "summary": "Studies the cytotoxic, anti-migration, and metabolic effects of iron and cobalt scorpionate complexes in cancer cell models.",
       "image": "images/molecules-28-05451-g001-550.jpg",
       "imageAlt": "Scientific diagram of C-scorpionate complexes"
@@ -147,6 +161,7 @@
       "year": 2023,
       "journal": "Cancers",
       "link": "https://publons.com/wos-op/publon/55577086/",
+      "featured": false,
       "summary": "Investigates how macrophages respond to radiation exposure and identifies molecular changes relevant to tumour radioresistance.",
       "image": "images/cancers-15-00270-ag.png",
       "imageAlt": "Macrophage radiation-response scientific figure"
@@ -157,6 +172,7 @@
       "year": 2023,
       "journal": "STAR protocols",
       "link": "https://europepmc.org/articles/PMC9929484",
+      "featured": false,
       "summary": "A step-by-step experimental and mass-spectrometry protocol for investigating drug metabolism in purified enzymes and cell cultures.",
       "image": "images/1-s2.0-S2666166723000448-fx1.jpg",
       "imageAlt": "Mass spectrometry protocol figure"
@@ -167,6 +183,7 @@
       "year": 2023,
       "journal": "ACS Omega",
       "link": "https://publons.com/wos-op/publon/62099837/",
+      "featured": false,
       "summary": "Evaluates how serum extraction choices affect reproducibility, analytical output, and outcome prediction in metabolomics.",
       "image": "images/images_large_ao3c01370_0005.jpeg",
       "imageAlt": "Serum extraction and metabolomics analysis diagram"
@@ -177,6 +194,7 @@
       "year": 2022,
       "journal": "Pharmaceuticals",
       "link": "https://publons.com/wos-op/publon/56444617/",
+      "featured": false,
       "summary": "",
       "image": "",
       "imageAlt": ""
@@ -187,6 +205,7 @@
       "year": 2022,
       "journal": "STAR Protocols",
       "link": "https://publons.com/wos-op/publon/65657086/",
+      "featured": false,
       "summary": "An accessible method for producing and assessing neuron-enriched cell cultures from embryonic chicken brains.",
       "image": "images/1-s2.0-S2666166722006335-fx1_lrg.jpg",
       "imageAlt": "Neuron culture protocol figure"
@@ -197,6 +216,7 @@
       "year": 2022,
       "journal": "Life sciences",
       "link": "https://doi.org/10.1016/j.lfs.2022.121056",
+      "featured": true,
       "summary": "A combined metabolomics and proteomics study exploring the biological basis of adverse neuropsychiatric effects associated with montelukast.",
       "image": "images/1-s2.0-S0024320522007561-ga1_lrg.jpg",
       "imageAlt": "Multiomics illustration"
@@ -207,6 +227,7 @@
       "year": 2021,
       "journal": "Applied Surface Science",
       "link": "https://www.sciencedirect.com/science/article/pii/S0169433220326052",
+      "featured": false,
       "summary": "",
       "image": "",
       "imageAlt": ""
@@ -217,6 +238,7 @@
       "year": 2021,
       "journal": "Biochemistry and Molecular Biology Education",
       "link": "https://doi.org/10.1002/bmb.21512",
+      "featured": false,
       "summary": "",
       "image": "",
       "imageAlt": ""
@@ -227,6 +249,7 @@
       "year": 2020,
       "journal": "Scientific Reports",
       "link": "http://dx.doi.org/10.1038/s41598-020-72133-0",
+      "featured": false,
       "summary": "",
       "image": "",
       "imageAlt": ""
@@ -237,6 +260,7 @@
       "year": 2020,
       "journal": "British Journal of Pharmacology",
       "link": "http://dx.doi.org/10.1111/bph.15222",
+      "featured": false,
       "summary": "",
       "image": "",
       "imageAlt": ""
@@ -247,6 +271,7 @@
       "year": 2019,
       "journal": "Molecules",
       "link": "http://dx.doi.org/10.3390/molecules24122306",
+      "featured": false,
       "summary": "",
       "image": "",
       "imageAlt": ""
@@ -257,6 +282,7 @@
       "year": 2018,
       "journal": "Thrombosis and Haemostasis",
       "link": "http://dx.doi.org/10.1055/s-0038-1645857",
+      "featured": false,
       "summary": "",
       "image": "",
       "imageAlt": ""
@@ -267,6 +293,7 @@
       "year": 2017,
       "journal": "Chemistry - An Asian Journal",
       "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-85025448120&partnerID=MN8TOARS",
+      "featured": false,
       "summary": "",
       "image": "",
       "imageAlt": ""
@@ -277,6 +304,7 @@
       "year": 2016,
       "journal": "RSC Adv.",
       "link": "https://doi.org/10.1039/c6ra09627a",
+      "featured": false,
       "summary": "",
       "image": "",
       "imageAlt": ""
@@ -287,6 +315,7 @@
       "year": 2015,
       "journal": "Journal of Medicinal Chemistry",
       "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-84930678136&partnerID=MN8TOARS",
+      "featured": false,
       "summary": "",
       "image": "",
       "imageAlt": ""
@@ -297,6 +326,7 @@
       "year": 2015,
       "journal": "",
       "link": "http://europepmc.org/abstract/med/25906385",
+      "featured": false,
       "summary": "",
       "image": "",
       "imageAlt": ""
@@ -307,6 +337,7 @@
       "year": 2013,
       "journal": "Journal of Biological Inorganic Chemistry",
       "link": "https://publons.com/wos-op/publon/4084718/",
+      "featured": false,
       "summary": "",
       "image": "",
       "imageAlt": ""
@@ -317,6 +348,7 @@
       "year": 2013,
       "journal": "The Journal of Physical Chemistry A",
       "link": "https://publons.com/wos-op/publon/3850973/",
+      "featured": false,
       "summary": "",
       "image": "",
       "imageAlt": ""
@@ -327,6 +359,7 @@
       "year": 2010,
       "journal": "Chemical Research in Toxicology",
       "link": "https://publons.com/wos-op/publon/4084663/",
+      "featured": false,
       "summary": "",
       "image": "",
       "imageAlt": ""
@@ -337,6 +370,7 @@
       "year": 2010,
       "journal": "Journal of Molecular Modeling",
       "link": "https://publons.com/wos-op/publon/4084704/",
+      "featured": false,
       "summary": "",
       "image": "",
       "imageAlt": ""
@@ -347,6 +381,7 @@
       "year": 2010,
       "journal": "Redox Report",
       "link": "https://publons.com/wos-op/publon/4084664/",
+      "featured": false,
       "summary": "",
       "image": "",
       "imageAlt": ""
@@ -357,6 +392,7 @@
       "year": 2010,
       "journal": "Arkivoc",
       "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-77953406068&partnerID=MN8TOARS",
+      "featured": false,
       "summary": "",
       "image": "",
       "imageAlt": ""
@@ -367,6 +403,7 @@
       "year": 2009,
       "journal": "Rapid Communications in Mass Spectrometry",
       "link": "https://publons.com/wos-op/publon/4084699/",
+      "featured": false,
       "summary": "",
       "image": "",
       "imageAlt": ""
@@ -377,6 +414,7 @@
       "year": 2009,
       "journal": "Journal of Mass Spectrometry",
       "link": "https://publons.com/wos-op/publon/4084705/",
+      "featured": false,
       "summary": "",
       "image": "",
       "imageAlt": ""
@@ -387,6 +425,7 @@
       "year": 2008,
       "journal": "British Journal of Pharmacology",
       "link": "https://publons.com/wos-op/publon/4084697/",
+      "featured": false,
       "summary": "",
       "image": "",
       "imageAlt": ""
@@ -397,6 +436,7 @@
       "year": 2006,
       "journal": "Journal of Agricultural and Food Chemistry",
       "link": "https://publons.com/wos-op/publon/4084703/",
+      "featured": false,
       "summary": "",
       "image": "",
       "imageAlt": ""
@@ -407,6 +447,7 @@
       "year": 2004,
       "journal": "Archives of Biochemistry and Biophysics",
       "link": "https://publons.com/wos-op/publon/4084701/",
+      "featured": false,
       "summary": "",
       "image": "",
       "imageAlt": ""
@@ -417,6 +458,7 @@
       "year": 2002,
       "journal": "Free Radical Research",
       "link": "http://www.scopus.com/inward/record.url?eid=2-s2.0-0036827942&partnerID=MN8TOARS",
+      "featured": false,
       "summary": "",
       "image": "",
       "imageAlt": ""
