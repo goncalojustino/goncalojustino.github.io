@@ -10,20 +10,26 @@
     {
       "name": "Artem Petrosian",
       "role": "PhD Student",
+      "image": "images/ap.jpg",
+
       "status": "current",
       "bio": "Research theme: Scorpionates for cancer therapy."
     },
     {
       "name": "Catia Marques",
-      "role": "Former member",
+      "role": "PhD Student",
       "status": "alumni",
-      "nowAt": "Current affiliation to be added"
+      "image": "images/cfm.jpg",
+      "bio": "Research theme: Toxicological and mechanistic evaluation behind Montelukast repurposing: metabolomics and proteomics approaches.",
+      "nowAt": "Perleman School of Medicine, UPenn"
     },
     {
       "name": "Pedro Rosado",
-      "role": "Former member",
+      "role": "PhD Student",
       "status": "alumni",
-      "nowAt": "Current affiliation to be added"
+      "image": "images/rosado.jpg",
+      "bio": "Research theme: Overcoming β-lactam resistance in methicillin-resistant Staphylococcus aureus.",
+      "nowAt": "-"
     }
   ]
 }
