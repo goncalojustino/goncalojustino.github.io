@@ -35,10 +35,11 @@ const getWork = (summary) => {
 
 // ORCID groups related records together. Keep every work-summary in each group so
 // the manager shows all individual Works and lets the site owner choose a version.
-const works = (worksPayload.group || [])
-  .flatMap((group) => group['work-summary'] || [])
+const groups = worksPayload.group || [];
+const workSummaries = groups.flatMap((group) => group['work-summary'] || []);
+const works = workSummaries
   .map(getWork)
   .filter((work) => work.title)
   .sort((a, b) => Number(b.year) - Number(a.year) || a.title.localeCompare(b.title));
 await writeFile('data/orcid-works.json', `${JSON.stringify({ orcidId, updatedAt: new Date().toISOString(), works }, null, 2)}\n`);
-console.log(`Synced ${works.length} public ORCID Works.`);
+console.log(`Synced ${works.length} public ORCID Works from ${groups.length} groups (${workSummaries.length} work summaries).`);
