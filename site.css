@@ -40,12 +40,21 @@ h2 { letter-spacing: -.04em; line-height: 1.12; }
 .team-tabs a, .publication-tabs a { padding: .55rem .9rem; border: 1px solid var(--line); border-radius: 99px; color: var(--teal); font-weight: 800; text-decoration: none; }
 .team-tabs a[aria-current], .publication-tabs a[aria-current], .publication-tabs a.is-active { background: var(--teal); color: #fff; }
 .member-card img { width: 100%; aspect-ratio: 4 / 3; padding: .6rem; background: var(--soft); object-fit: contain; }
+.team-grid.alumni-grid { display: block; }
+.alumni-group { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; }
+.alumni-group + .alumni-group { margin-top: 1.5rem; }
+.alumni-grid .member-card.not-phd { min-height: 285px; }
+.alumni-grid .member-card.not-phd .member-card-content { display: flex; flex-direction: column; min-height: 283px; }
+.member-role { min-height: 1.6rem; }
+.alumni-grid .member-card.not-phd .member-bio { min-height: 5.2rem; }
+.alumni-grid .member-card.not-phd .member-link, .member-link-placeholder { margin-top: auto; }
+.member-link-placeholder { display: block; height: 2.8rem; }
 .team-empty { grid-column: 1 / -1; padding: 2rem; border: 1px dashed #aac8cd; border-radius: 12px; color: var(--muted); text-align: center; }
 
 @media (max-width: 760px) {
   .site-shell { align-items: flex-start; flex-direction: column; gap: .75rem; }
   .site-nav { width: 100%; gap: .85rem; overflow: auto; white-space: nowrap; }
   .site-nav a { font-size: .85rem; }
-  .hero, .grid { grid-template-columns: 1fr; }
+  .hero, .grid, .alumni-group { grid-template-columns: 1fr; }
   .page { padding-top: 3rem; }
 }
