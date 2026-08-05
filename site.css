@@ -29,12 +29,10 @@ h2 { letter-spacing: -.04em; line-height: 1.12; }
 .contact-card p { margin: 0; white-space: nowrap; }
 .contact-card .contact-name { margin-bottom: .7rem; color: var(--ink); font-weight: 800; }
 .profile-links { display: flex; flex-wrap: wrap; gap: .65rem; margin-top: 1.25rem; }
-.profile-link { display: flex; align-items: center; justify-content: center; width: 120px; height: 46px; padding: .45rem .6rem; border: 1px solid var(--line); border-radius: 10px; background: #fff; }
-.profile-link:hover { border-color: var(--teal); }
-.profile-link img { display: block; max-width: 100%; max-height: 28px; object-fit: contain; }
-.profile-link-orcid { width: 52px; }
-.profile-link-orcid img { height: 28px; }
-.profile-link-cqe img { max-height: 34px; }
+.profile-link { display: block; width: 50px; height: 50px; overflow: hidden; border-radius: 50%; transition: transform .2s ease; }
+.profile-link:hover { transform: scale(1.08); }
+.profile-link:focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; }
+.profile-link img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .button { display: inline-block; margin-top: 1rem; padding: .7rem 1rem; border-radius: 99px; background: var(--teal); color: #fff; font-weight: 800; text-decoration: none; }
 .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; margin-top: 3rem; }
 .card, .publication-card, .member-card { overflow: hidden; border: 1px solid var(--line); border-radius: 15px; background: #fff; }
