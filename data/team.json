@@ -30,6 +30,49 @@
       "image": "images/rosado.jpeg",
       "bio": "Research theme: Overcoming β-lactam resistance in methicillin-resistant Staphylococcus aureus.",
       "nowAt": "-"
+    },
+    {
+      "name": "Cláudio Franco",
+      "role": "MSc Student",
+      "status": "alumni",
+      "bio": "Modelação matemática das espécies oxidantes e nitrosantes em sistemas biológicos",
+      "link": "https://comum.rcaap.pt/search?spc.page=1&f.access_status=open.access,equals"
+    },
+    {
+      "name": "João Prazeres",
+      "role": "MSc Student",
+      "status": "alumni",
+      "bio": "Expression of recombinant human proteins involved in drug metabolism",
+      "link": "https://comum.rcaap.pt/search?spc.page=1&f.access_status=open.access,equals"
+    },
+    {
+      "name": "Josimar Cruz",
+      "role": "MSc Student",
+      "status": "alumni",
+      "bio": "Development of a bacterial biomimetic system for liver drug metabolism",
+      "link": "https://comum.rcaap.pt/search?spc.page=1&f.access_status=open.access,equals"
+    },
+    {
+      "name": "Francisco Garcia",
+      "role": "MSc Student",
+      "status": "alumni",
+      "bio": "Clonagem e expressão de proteínas de ligação à penicilina e pseudomonas aeruginosa",
+      "link": "https://comum.rcaap.pt/search?spc.page=1&f.access_status=embargo,equals"
+    },
+    {
+      "name": "Gonçalo Monteiro",
+      "role": "MSc Student",
+      "status": "alumni",
+      "bio": "Analysis of residue interaction networks in molecular dynamics simulations",
+      "link": "https://comum.rcaap.pt/search?spc.page=1&f.access_status=open.access,equals"
+    },
+    {
+      "name": "Pedro Rosado",
+      "role": "MSc Student",
+      "image": "images/rosado.jpeg",
+      "status": "alumni",
+      "bio": "Development of a bacterial model for the production of functional human drug metabolizing enzymes",
+      "link": "https://fenix.tecnico.ulisboa.pt/cursos/mbiotec/dissertacao/1409728525632216"
     }
   ]
 }
