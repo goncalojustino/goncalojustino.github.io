@@ -29,7 +29,7 @@ h2 { letter-spacing: -.04em; line-height: 1.12; }
 .contact-card p { margin: 0; white-space: nowrap; }
 .contact-card .contact-name { margin-bottom: .7rem; color: var(--ink); font-weight: 800; }
 .profile-links { display: flex; flex-wrap: wrap; gap: .65rem; margin-top: 1.25rem; }
-.profile-link { display: block; width: 50px; height: 50px; overflow: hidden; border-radius: 50%; transition: transform .2s ease; }
+.profile-link { display: block; width: 25px; height: 25px; overflow: hidden; border-radius: 50%; transition: transform .2s ease; }
 .profile-link:hover { transform: scale(1.08); }
 .profile-link:focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; }
 .profile-link img { display: block; width: 100%; height: 100%; object-fit: cover; }
