@@ -2,7 +2,7 @@ html { scroll-behavior: smooth; }
 
 .research-page .page { max-width: var(--max); }
 .research-hero { padding-bottom: 2rem; }
-.research-hero h1 { max-width: 30ch; }
+.research-hero h1 { max-width: none; }
 .research-intro { max-width: 68ch; color: var(--muted); font-size: 1.04rem; }
 .keyword-line, .method-line { color: var(--olive); font-size: .84rem; font-weight: 800; letter-spacing: .025em; line-height: 1.9; }
 .keyword-line span { color: var(--ochre); margin: 0 .18rem; }
@@ -46,6 +46,7 @@ html { scroll-behavior: smooth; }
 .back-link:hover { color: var(--ochre); }
 
 @media (max-width: 760px) {
+  .research-title-break { display: none; }
   .pillar-grid, .theme-columns { grid-template-columns: 1fr; }
   .research-sequence { align-items: flex-start; flex-direction: column; gap: .8rem; }
   .research-sequence i { align-self: flex-start; line-height: .65; transform: rotate(90deg); }
