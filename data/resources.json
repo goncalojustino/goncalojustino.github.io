@@ -1,0 +1,63 @@
+{
+  "updatedAt": "2026-08-13T00:00:00Z",
+  "resourceTypes": [
+    { "id": "software", "label": "Software" },
+    { "id": "dataset", "label": "Datasets" },
+    { "id": "database", "label": "Databases" },
+    { "id": "book", "label": "Books & Monographs" },
+    { "id": "teaching", "label": "Teaching" },
+    { "id": "protocol", "label": "Protocols" },
+    { "id": "other", "label": "Other" }
+  ],
+  "resources": [
+    {
+      "id": "tempusfugit-v1",
+      "title": "Tempusfugit",
+      "type": "software",
+      "year": 2025,
+      "authors": ["Gonçalo C. Justino"],
+      "description": "Public release of Tempusfugit v1.0, archived through Zenodo with a persistent DOI and source release history on GitHub.",
+      "version": "1.0",
+      "repository": "Zenodo",
+      "url": "https://zenodo.org/records/18076982",
+      "doi": "10.5281/zenodo.18076982",
+      "github": "https://github.com/goncalojustino/tempusfugit_public",
+      "download": "https://zenodo.org/api/records/18076982/files/goncalojustino/tempusfugit_public-v1.0.zip/content",
+      "license": "MIT",
+      "keywords": ["software", "research tools"],
+      "featured": true
+    },
+    {
+      "id": "quimica-organica",
+      "title": "Química Orgânica",
+      "type": "teaching",
+      "year": 2015,
+      "authors": ["Marta Justino", "Gonçalo C. Justino"],
+      "description": "Study handbook supporting the Organic Chemistry course units in the Biotechnology and Chemical Engineering degrees at Escola Superior de Tecnologia do Barreiro, Instituto Politécnico de Setúbal.",
+      "version": "1",
+      "repository": "Zenodo",
+      "url": "https://zenodo.org/records/5979617",
+      "doi": "10.5281/zenodo.5979617",
+      "download": "https://zenodo.org/api/records/5979617/files/SebentaQO_1415.pdf/content",
+      "license": "CC BY 4.0",
+      "keywords": ["organic chemistry", "teaching", "biotechnology", "chemical engineering"],
+      "featured": false
+    },
+    {
+      "id": "laboratorios-iiib",
+      "title": "Sebenta de Laboratórios IIIB",
+      "type": "protocol",
+      "year": 2015,
+      "authors": ["Gonçalo C. Justino", "Marta Justino"],
+      "description": "Collection of practical-class protocols for the Laboratórios IIIB course unit in the Biotechnology degree at Escola Superior de Tecnologia do Barreiro, Instituto Politécnico de Setúbal.",
+      "version": "1",
+      "repository": "Zenodo",
+      "url": "https://zenodo.org/records/5979625",
+      "doi": "10.5281/zenodo.5979625",
+      "download": "https://zenodo.org/api/records/5979625/files/SebentaLabIIIB-1415.pdf/content",
+      "license": "CC BY 4.0",
+      "keywords": ["laboratory protocols", "teaching", "biotechnology"],
+      "featured": false
+    }
+  ]
+}

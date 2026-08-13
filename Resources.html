@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Software, datasets, books, teaching material, and reusable research outputs by Gonçalo C. Justino.">
+    <title>Resources | Justino Research Group</title>
+    <link rel="stylesheet" href="site.css">
+    <link rel="stylesheet" href="Resources.css">
+  </head>
+  <body class="resources-page">
+    <main class="page">
+      <header class="resources-intro">
+        <p class="eyebrow">Reusable research outputs</p>
+        <h1>Resources</h1>
+        <p class="lead">A catalogue of software, datasets, books, teaching material, protocols, and other research outputs made available for reuse.</p>
+        <p>Files and releases are maintained in external repositories and platforms that provide persistent access, versioning, and, where applicable, DOIs. Publications remain listed separately in the <a href="Publications.html">Publications</a> area.</p>
+      </header>
+
+      <section class="resource-controls" aria-label="Browse resources">
+        <div id="resource-filters" class="resource-filters" aria-label="Resource type filters"></div>
+        <div class="resource-search-row">
+          <label class="resource-search"><span class="visually-hidden">Search resources</span><input id="resource-search" type="search" placeholder="Search title, author, keyword…"></label>
+          <label class="year-filter">Year <select id="resource-year"><option value="">All years</option></select></label>
+        </div>
+      </section>
+
+      <p id="resource-summary" class="resource-summary" aria-live="polite"></p>
+      <section id="resource-list" class="resource-list" aria-label="Research resources" aria-live="polite"></section>
+    </main>
+    <script src="resources.js"></script>
+    <script src="site.js"></script>
+  </body>
+</html>

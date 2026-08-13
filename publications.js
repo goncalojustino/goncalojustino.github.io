@@ -10,6 +10,7 @@
     software: 'Software & datasets'
   };
   const selectedCategory = new URLSearchParams(location.search).get('category') || 'highlights';
+  const resourceLink = document.querySelector('#software-resources-link');
 
   title.textContent = categories[selectedCategory] || categories.highlights;
   document.querySelectorAll('.publication-tabs a').forEach((tab) => {
@@ -19,6 +20,7 @@
   const activeTab = document.querySelector(`.publication-tabs a[href="Publications.html?category=${selectedCategory}"]`);
   activeTab?.setAttribute('aria-current', 'page');
   activeTab?.classList.add('is-active');
+  if (resourceLink) resourceLink.hidden = selectedCategory !== 'software';
 
   Promise.all([fetch('data/publications.json'), fetch('data/orcid-works.json')])
     .then(async ([response, worksResponse]) => {

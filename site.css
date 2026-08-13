@@ -47,6 +47,8 @@ h2 { letter-spacing: -.04em; line-height: 1.12; }
 .publication-card.featured { border-color: var(--ochre); }
 .publication-card.featured .card-meta { color: var(--ochre); }
 .publication-message { color: var(--muted); }
+.software-resources-link { max-width: 65ch; margin: 0 0 2rem; color: var(--muted); }
+.software-resources-link a { color: var(--olive); font-weight: 800; }
 .team-tabs, .publication-tabs { display: flex; flex-wrap: wrap; gap: .7rem; margin: 2.5rem 0; }
 .team-tabs a, .publication-tabs a { padding: .55rem .9rem; border: 1px solid var(--line); border-radius: 99px; color: var(--olive); font-weight: 800; text-decoration: none; }
 .team-tabs a[aria-current], .publication-tabs a[aria-current], .publication-tabs a.is-active { background: var(--olive); color: #fff; }
