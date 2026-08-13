@@ -1,0 +1,24 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Six Degrees — graph tests</title>
+<style>body{font-family:system-ui;margin:2rem;max-width:50rem}li.pass{color:#137333}li.fail{color:#b3261e}code{background:#f4f4f4;padding:.1rem .3rem}</style>
+<h1>Graph-search tests</h1><p>These tests use a mock graph and do not call Wikipedia.</p><ul id="results"></ul>
+<script type="module">
+  import { findPath } from '../js/graph.js';
+  const graph = { A:['B','C'], B:['D'], C:['E'], D:['F'], E:['F'], F:[], G:['A'], H:['H'] };
+  const ids = Object.fromEntries(Object.keys(graph).map((title, index) => [title, index + 1]));
+  const names = Object.fromEntries(Object.entries(ids).map(([title, id]) => [id, title]));
+  const api = {
+    getOutgoingLinks: async (id) => graph[names[id]].map((title) => ({ pageid: ids[title], title })),
+    getBacklinks: async (id) => Object.entries(graph).filter(([, links]) => links.includes(names[id])).map(([title]) => ({ pageid: ids[title], title })),
+  };
+  const tests = [
+    ['Finds a valid path', async () => (await findPath({pageid:ids.A},{pageid:ids.F},api,{maxDepth:5})).status === 'found'],
+    ['Handles source equals target', async () => { const r=await findPath({pageid:ids.A},{pageid:ids.A},api); return r.depth === 0 && r.pathIds.length === 1; }],
+    ['Stops at max depth', async () => (await findPath({pageid:ids.A},{pageid:ids.F},api,{maxDepth:1})).status === 'not-found'],
+    ['Handles cycles and unreachable nodes', async () => (await findPath({pageid:ids.H},{pageid:ids.F},api,{maxDepth:4})).status === 'not-found'],
+    ['Honours cancellation', async () => { const controller = new AbortController(); controller.abort(); try { await findPath({pageid:ids.A},{pageid:ids.F},api,{signal:controller.signal}); return false; } catch (e) { return e.name === 'AbortError'; } }],
+  ];
+  const list=document.querySelector('#results');
+  for (const [label, test] of tests) { const passed=await test(); list.insertAdjacentHTML('beforeend', `<li class="${passed?'pass':'fail'}">${passed?'✓':'✕'} ${label}</li>`); }
+</script>

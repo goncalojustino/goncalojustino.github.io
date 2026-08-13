@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Find a short hyperlink connection between two English Wikipedia articles.">
+    <title>Six Degrees of Wikipedia</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero" aria-labelledby="app-title">
+        <p class="eyebrow">An experimental link explorer</p>
+        <h1 id="app-title">Six degrees<br>of Wikipedia<span>.</span></h1>
+        <p class="intro">Pick two English Wikipedia articles. We will explore the links between them and reveal a short connection.</p>
+      </section>
+
+      <section class="search-panel" aria-labelledby="search-heading">
+        <h2 id="search-heading" class="visually-hidden">Find a Wikipedia connection</h2>
+        <form id="search-form" novalidate>
+          <div class="article-field">
+            <label for="from-input">From</label>
+            <div class="input-wrap">
+              <input id="from-input" name="from" type="search" autocomplete="off" spellcheck="false" placeholder="Mass spectrometry" aria-autocomplete="list" aria-controls="from-suggestions" aria-expanded="false">
+              <button type="button" class="clear-selection" data-clear="from" aria-label="Clear starting article" hidden>×</button>
+            </div>
+            <div id="from-selection" class="selection" aria-live="polite"></div>
+            <ul id="from-suggestions" class="suggestions" role="listbox" hidden></ul>
+          </div>
+
+          <div class="connector" aria-hidden="true">→</div>
+
+          <div class="article-field">
+            <label for="to-input">To</label>
+            <div class="input-wrap">
+              <input id="to-input" name="to" type="search" autocomplete="off" spellcheck="false" placeholder="Napoleon" aria-autocomplete="list" aria-controls="to-suggestions" aria-expanded="false">
+              <button type="button" class="clear-selection" data-clear="to" aria-label="Clear target article" hidden>×</button>
+            </div>
+            <div id="to-selection" class="selection" aria-live="polite"></div>
+            <ul id="to-suggestions" class="suggestions" role="listbox" hidden></ul>
+          </div>
+
+          <div class="search-actions">
+            <button id="find-button" class="primary-button" type="submit">Find the connection <span aria-hidden="true">↗</span></button>
+            <button id="random-button" class="quiet-button" type="button">Random challenge</button>
+          </div>
+        </form>
+        <p class="hint">Choose a suggestion for each field to search the article graph.</p>
+      </section>
+
+      <section id="search-status" class="search-status" aria-live="polite" hidden>
+        <div class="status-mark" aria-hidden="true"></div>
+        <div><strong id="status-title">Searching Wikipedia</strong><p id="status-detail">Preparing the graph search…</p></div>
+        <button id="cancel-button" class="quiet-button" type="button">Cancel search</button>
+      </section>
+
+      <section id="result" class="result" aria-live="polite" hidden></section>
+
+      <section id="history" class="history" aria-labelledby="history-title" hidden>
+        <p class="eyebrow">Recent discoveries</p>
+        <h2 id="history-title">Your search history</h2>
+        <div id="history-items" class="history-items"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Uses the <a href="https://www.mediawiki.org/wiki/API:Main_page" target="_blank" rel="noreferrer">MediaWiki API</a>. Connections are bounded searches, not guaranteed global shortest paths.</p>
+    </footer>
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>
