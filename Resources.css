@@ -15,7 +15,7 @@
 .year-filter select { width: auto; }
 .resource-summary { margin: 1.4rem 0; color: var(--muted); font-size: .87rem; }
 .resource-list { display: grid; gap: 1rem; }
-.resource-entry { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 1.5rem; padding: clamp(1.2rem, 3vw, 1.7rem); border-top: 2px solid var(--line); background: transparent; }
+.resource-entry { display: grid; grid-template-columns: minmax(0, 1fr) 16rem; gap: 1.5rem; padding: clamp(1.2rem, 3vw, 1.7rem); border-top: 2px solid var(--line); background: transparent; }
 .resource-entry.featured { border-top-color: var(--ochre); }
 .resource-entry-main { min-width: 0; }
 .resource-kind { margin: 0 0 .55rem; color: var(--olive); font-size: .76rem; font-weight: 850; letter-spacing: .13em; text-transform: uppercase; }
@@ -24,7 +24,7 @@
 .resource-description { max-width: 70ch; margin: 0; color: var(--muted); }
 .resource-keywords { display: flex; flex-wrap: wrap; gap: .35rem; margin: 1rem 0 0; }
 .resource-keywords span { padding: .2rem .45rem; border-radius: 99px; color: var(--olive); background: var(--soft); font-size: .73rem; font-weight: 750; }
-.resource-side { width: min(16rem, 100%); }
+.resource-side { width: 16rem; }
 .resource-repository { margin: 0 0 .75rem; color: var(--muted); font-size: .82rem; }
 .resource-repository strong { display: block; color: var(--ink); font-size: .88rem; }
 .resource-doi { display: block; margin-bottom: .9rem; overflow-wrap: anywhere; color: var(--ochre); font-size: .78rem; font-weight: 750; }
