@@ -1,0 +1,26 @@
+{
+  "id": "tempusfugit-v1",
+  "title": "Tempusfugit",
+  "website_category": "software",
+  "authors": [
+    { "name": "Gonçalo C. Justino" }
+  ],
+  "year": 2025,
+  "publication_date": "2025-12-28",
+  "short_description": "Public release of Tempusfugit v1.0, archived through Zenodo with a persistent DOI and source release history on GitHub.",
+  "version": "1.0",
+  "doi": "10.5281/zenodo.18076982",
+  "doi_url": "https://doi.org/10.5281/zenodo.18076982",
+  "repository": "Zenodo",
+  "resource_url": "https://zenodo.org/records/18076982",
+  "landing_page_url": "https://zenodo.org/records/18076982",
+  "github_url": "https://github.com/goncalojustino/tempusfugit_public",
+  "download_url": "https://zenodo.org/api/records/18076982/files/goncalojustino/tempusfugit_public-v1.0.zip/content",
+  "license": "MIT",
+  "keywords": ["software", "research tools"],
+  "featured": true,
+  "public": true,
+  "metadata_sources": ["DataCite", "Zenodo"],
+  "provider": "Zenodo",
+  "provider_record_id": "18076982"
+}

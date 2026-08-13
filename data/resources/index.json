@@ -1,0 +1,18 @@
+{
+  "updated_at": "2026-08-13T18:31:12Z",
+  "resource_types": [
+    { "id": "software", "label": "Software" },
+    { "id": "datasets", "label": "Datasets" },
+    { "id": "databases", "label": "Databases" },
+    { "id": "books-monographs", "label": "Books & Monographs" },
+    { "id": "teaching", "label": "Teaching Materials" },
+    { "id": "protocols", "label": "Protocols" },
+    { "id": "code", "label": "Code" },
+    { "id": "other", "label": "Other" }
+  ],
+  "resource_files": [
+    "tempusfugit-v1.json",
+    "laboratorios-iiib.json",
+    "quimica-organica.json"
+  ]
+}

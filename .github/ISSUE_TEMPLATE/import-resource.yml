@@ -1,0 +1,37 @@
+name: Import Resource by DOI
+description: Retrieve metadata for one external research or academic resource, then review it before publication.
+title: "Resource import: "
+labels: ["resource-import"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Paste a DOI for software, data, teaching material, books, protocols, or another reusable output. Nothing is published when you submit this form.
+  - type: input
+    id: doi
+    attributes:
+      label: DOI
+      description: Accepts a DOI, doi: prefix, or a doi.org URL.
+      placeholder: "10.5281/zenodo.1234567"
+    validations:
+      required: true
+  - type: dropdown
+    id: suggested-category
+    attributes:
+      label: Suggested website category (optional)
+      description: This is only a hint; the editable review block is authoritative.
+      options:
+        - Let the importer suggest one
+        - Software
+        - Datasets
+        - Databases
+        - Books & Monographs
+        - Teaching Materials
+        - Protocols
+        - Code
+        - Other
+  - type: textarea
+    id: note
+    attributes:
+      label: Optional note
+      description: Add any context for the review. It will not be public unless you add it to the review block.

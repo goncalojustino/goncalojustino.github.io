@@ -1,0 +1,26 @@
+{
+  "id": "quimica-organica",
+  "title": "Química Orgânica",
+  "website_category": "teaching",
+  "authors": [
+    { "name": "Marta Justino" },
+    { "name": "Gonçalo C. Justino" }
+  ],
+  "year": 2015,
+  "publication_date": "2015-04-27",
+  "short_description": "Study handbook supporting the Organic Chemistry course units in the Biotechnology and Chemical Engineering degrees at Escola Superior de Tecnologia do Barreiro, Instituto Politécnico de Setúbal.",
+  "version": "1",
+  "doi": "10.5281/zenodo.5979617",
+  "doi_url": "https://doi.org/10.5281/zenodo.5979617",
+  "repository": "Zenodo",
+  "resource_url": "https://zenodo.org/records/5979617",
+  "landing_page_url": "https://zenodo.org/records/5979617",
+  "download_url": "https://zenodo.org/api/records/5979617/files/SebentaQO_1415.pdf/content",
+  "license": "CC BY 4.0",
+  "keywords": ["organic chemistry", "teaching", "biotechnology", "chemical engineering"],
+  "featured": false,
+  "public": true,
+  "metadata_sources": ["DataCite", "Zenodo"],
+  "provider": "Zenodo",
+  "provider_record_id": "5979617"
+}

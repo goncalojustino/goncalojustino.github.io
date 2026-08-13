@@ -1,0 +1,67 @@
+name: Publish Reviewed Resource
+
+on:
+  issues:
+    types: [labeled]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: resource-catalogue
+  cancel-in-progress: false
+
+jobs:
+  publish-resource:
+    if: github.event.label.name == 'publish-resource'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Save reviewed issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: gh issue view "$ISSUE_NUMBER" --json body --jq .body > "$RUNNER_TEMP/resource-issue.md"
+
+      - name: Validate and create the reviewed resource
+        id: publish
+        continue-on-error: true
+        run: |
+          python3 scripts/resources/publish_resource.py \
+            --issue-file "$RUNNER_TEMP/resource-issue.md" \
+            --resources-dir data/resources \
+            --index data/resources/index.json \
+            --result "$RUNNER_TEMP/publish-result.md"
+
+      - name: Report validation problem
+        if: steps.publish.outcome != 'success'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: gh issue comment "$ISSUE_NUMBER" --body-file "$RUNNER_TEMP/publish-result.md"
+
+      - name: Stop when review validation fails
+        if: steps.publish.outcome != 'success'
+        run: exit 1
+
+      - name: Commit the reviewed resource
+        env:
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/resources
+          git diff --cached --check
+          git commit -m "Publish reviewed resource (#$ISSUE_NUMBER)"
+          git push
+
+      - name: Record successful publication and close the issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          gh issue comment "$ISSUE_NUMBER" --body-file "$RUNNER_TEMP/publish-result.md"
+          gh issue edit "$ISSUE_NUMBER" --remove-label publish-resource --remove-label resource-review --add-label resource-published
+          gh issue close "$ISSUE_NUMBER"

@@ -1,0 +1,26 @@
+{
+  "id": "laboratorios-iiib",
+  "title": "Sebenta de Laboratórios IIIB",
+  "website_category": "protocols",
+  "authors": [
+    { "name": "Gonçalo C. Justino" },
+    { "name": "Marta Justino" }
+  ],
+  "year": 2015,
+  "publication_date": "2015-04-22",
+  "short_description": "Collection of practical-class protocols for the Laboratórios IIIB course unit in the Biotechnology degree at Escola Superior de Tecnologia do Barreiro, Instituto Politécnico de Setúbal.",
+  "version": "1",
+  "doi": "10.5281/zenodo.5979625",
+  "doi_url": "https://doi.org/10.5281/zenodo.5979625",
+  "repository": "Zenodo",
+  "resource_url": "https://zenodo.org/records/5979625",
+  "landing_page_url": "https://zenodo.org/records/5979625",
+  "download_url": "https://zenodo.org/api/records/5979625/files/SebentaLabIIIB-1415.pdf/content",
+  "license": "CC BY 4.0",
+  "keywords": ["laboratory protocols", "teaching", "biotechnology"],
+  "featured": false,
+  "public": true,
+  "metadata_sources": ["DataCite", "Zenodo"],
+  "provider": "Zenodo",
+  "provider_record_id": "5979625"
+}

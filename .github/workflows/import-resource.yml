@@ -1,0 +1,53 @@
+name: Import Resource DOI
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  import-resource:
+    if: contains(github.event.issue.labels.*.name, 'resource-import')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Ensure resource workflow labels exist
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create resource-import --color 8B5E34 --description "DOI resource import queued" --force
+          gh label create resource-review --color 5E7A38 --description "Resource metadata ready for editorial review" --force
+          gh label create publish-resource --color B8860B --description "Explicit approval to publish this resource" --force
+          gh label create resource-published --color 2DA44E --description "Resource committed to the public catalogue" --force
+          gh label create resource-import-error --color B91C1C --description "Resource import needs attention" --force
+
+      - name: Save issue form
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: printf '%s' "$ISSUE_BODY" > "$RUNNER_TEMP/resource-issue.md"
+
+      - name: Retrieve and normalize DOI metadata
+        id: import
+        continue-on-error: true
+        run: python3 scripts/resources/import_resource.py --issue-file "$RUNNER_TEMP/resource-issue.md" --resources-dir data/resources --output "$RUNNER_TEMP/resource-review.md"
+
+      - name: Update the issue for review
+        if: steps.import.outcome == 'success'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          gh issue edit "$ISSUE_NUMBER" --body-file "$RUNNER_TEMP/resource-review.md" --remove-label resource-import --add-label resource-review
+
+      - name: Mark import failure
+        if: steps.import.outcome != 'success'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          gh issue comment "$ISSUE_NUMBER" --body "The DOI import could not be completed. No resource was created. Please check the DOI and the workflow log, then open a new import issue."
+          gh issue edit "$ISSUE_NUMBER" --remove-label resource-import --add-label resource-import-error
