@@ -2,7 +2,7 @@ html { scroll-behavior: smooth; }
 
 .research-page .page { max-width: var(--max); }
 .research-hero { padding-bottom: 2rem; }
-.research-hero h1 { max-width: 16ch; }
+.research-hero h1 { max-width: 30ch; }
 .research-intro { max-width: 68ch; color: var(--muted); font-size: 1.04rem; }
 .keyword-line, .method-line { color: var(--olive); font-size: .84rem; font-weight: 800; letter-spacing: .025em; line-height: 1.9; }
 .keyword-line span { color: var(--ochre); margin: 0 .18rem; }
