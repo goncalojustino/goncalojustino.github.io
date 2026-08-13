@@ -6,16 +6,124 @@
     <meta name="description" content="Research themes of the Justino Research Group.">
     <title>Research | Justino Research Group</title>
     <link rel="stylesheet" href="site.css">
+    <link rel="stylesheet" href="Research-page.css">
   </head>
-  <body>
-    <main class="page">
-      <p class="eyebrow">Research themes</p>
-      <h1>Integrative biology for health</h1>
-      <p class="lead">Integrating biochemistry, multi-omics, mass spectrometry, bioinformatics, and computational biology to understand biological systems and translate molecular discoveries into advances in health and precision medicine.</p>
-      <section class="grid">
-        <article class="card"><img src="images/im28.png" alt="Clinical omics"><div><h2>Clinical omics</h2><p>Biomarkers, molecular diagnostics, and systems medicine through the integration of proteomics, metabolomics, and high-resolution mass spectrometry to improve disease diagnosis, prognosis, and patient stratification.</p></div></article>
-        <article class="card"><img src="images/im29.png" alt="Disease Mechanisms"><div><h2>Disease Mechanisms</h2><p>Experimental and computational approaches to uncover the molecular mechanisms underlying health, disease, antimicrobial resistance, and therapeutic response through multi-omics and systems biology.</p></div></article>
-        <article class="card"><img src="images/im30.png" alt="Computational Biology"><div><h2>Computational Biology</h2><p>Bioinformatics, molecular modelling, artificial intelligence, and data integration to interpret complex biological systems, predict molecular interactions, and accelerate translational research.</p></div></article>
+  <body class="research-page">
+    <main>
+      <section class="research-hero page" aria-labelledby="research-title">
+        <p class="eyebrow">Research</p>
+        <h1 id="research-title">Molecular mechanisms in health, disease &amp; drug action</h1>
+        <p class="lead">We investigate how biological systems change in health, disease, and response to therapeutic and chemical perturbations. Our research combines proteomics, metabolomics, systems biology, molecular biochemistry, mass spectrometry, bioinformatics, molecular modelling, and data-driven computational approaches to connect molecular measurements with biological mechanisms.</p>
+        <p class="research-intro">Rather than treating these methods as separate research areas, we integrate them across different biological questions: characterizing molecular states, understanding how disease and drugs perturb biological systems, and developing computational and molecular models that help explain the resulting changes.</p>
+        <p class="keyword-line">Proteomics <span>·</span> Metabolomics <span>·</span> Multi-omics <span>·</span> Systems Biology <span>·</span> Mass Spectrometry <span>·</span> Bioinformatics <span>·</span> Molecular Modelling <span>·</span> AI</p>
+      </section>
+
+      <section class="page research-overview" aria-label="Research pillars">
+        <div class="pillar-grid">
+          <a class="pillar-card" href="#omics-systems-biology">
+            <img src="images/im28.png" alt="Molecular network illustration for omics and systems biology">
+            <span class="card-number">01</span>
+            <h2>Omics &amp; Systems Biology</h2>
+            <p>Proteomics, metabolomics, and multi-omics approaches to characterize biological states, quantify responses to disease and chemical perturbation, identify biomarkers, and reconstruct affected pathways and molecular networks.</p>
+            <span class="card-link">Explore pillar <b aria-hidden="true">↓</b></span>
+          </a>
+          <a class="pillar-card" href="#molecular-mechanisms">
+            <img src="images/im29.png" alt="Biological illustration for molecular mechanisms of disease and drug action">
+            <span class="card-number">02</span>
+            <h2>Molecular Mechanisms of Disease &amp; Drug Action</h2>
+            <p>Experimental and systems-level investigation of how disease, therapeutic agents, and xenobiotics alter cellular and molecular processes, with applications in cancer, antimicrobial resistance, neurobiology, and adverse drug responses.</p>
+            <span class="card-link">Explore pillar <b aria-hidden="true">↓</b></span>
+          </a>
+          <a class="pillar-card" href="#computational-molecular-biochemistry">
+            <img src="images/im30.png" alt="Computational molecular biology illustration">
+            <span class="card-number">03</span>
+            <h2>Computational &amp; Molecular Biochemistry</h2>
+            <p>Bioinformatics, molecular modelling, molecular dynamics, protein–ligand analysis, computational omics, and emerging AI-based approaches for understanding molecular interactions and complex biological datasets.</p>
+            <span class="card-link">Explore pillar <b aria-hidden="true">↓</b></span>
+          </a>
+        </div>
+
+        <div class="research-sequence" aria-label="Research process">
+          <div><strong>Measure</strong><span>Omics &amp; Systems Biology</span><small>Measure and organize molecular change</small></div>
+          <i aria-hidden="true">→</i>
+          <div><strong>Explain</strong><span>Molecular Mechanisms</span><small>Explain biological response</small></div>
+          <i aria-hidden="true">→</i>
+          <div><strong>Model</strong><span>Computational Biochemistry</span><small>Model, integrate, and interpret systems</small></div>
+        </div>
+      </section>
+
+      <section id="omics-systems-biology" class="research-pillar research-pillar-tint" aria-labelledby="omics-title">
+        <div class="page">
+          <header class="pillar-heading">
+            <p class="eyebrow">Research pillar 01</p>
+            <h2 id="omics-title">Omics &amp; Systems Biology</h2>
+            <p>From molecular measurements to biological systems</p>
+          </header>
+          <div class="pillar-intro">
+            <p>Proteins and metabolites provide complementary views of biological state. We use quantitative proteomics, metabolomics, and multi-omics approaches to characterize how these molecular systems change in disease, during cellular adaptation, and following exposure to therapeutic agents or other chemical perturbations.</p>
+            <p>Our objective is not simply to identify molecules whose abundance changes. Differential molecular profiles are interpreted in terms of biochemical pathways, interaction networks, cellular processes, and coordinated biological responses. This systems-level perspective places individual molecular observations within the broader organization of the cell or organism.</p>
+            <p>High-resolution mass spectrometry provides much of the experimental foundation for these studies, while statistical analysis, bioinformatics, pathway analysis, and network biology provide the framework required to convert molecular measurements into biological interpretation.</p>
+          </div>
+          <div class="theme-columns">
+            <article><h3>Quantitative proteomics</h3><p>We use mass-spectrometry-based proteomics to characterize changes in protein abundance, protein composition, and regulatory processes across biological conditions. Depending on the biological question, these analyses range from broad proteome profiling to focused investigation of specific pathways, protein families, or post-translational modifications.</p><p class="detail">Applications include disease-associated proteome changes, drug and xenobiotic perturbation, antimicrobial response, cancer cell biology, clinical molecular characterization, and protein biomarkers.</p></article>
+            <article><h3>Metabolomics</h3><p>Metabolomics provides a complementary view of cellular and systemic physiology by directly measuring changes in small molecules associated with metabolic activity. We use metabolomic approaches to investigate altered pathways, cellular adaptation, metabolic consequences of drug exposure, and interactions between metabolism and broader molecular responses.</p></article>
+            <article><h3>Multi-omics integration</h3><p>Proteomic and metabolomic datasets describe different layers of the same biological system. We investigate strategies for integrating these layers to identify coordinated molecular responses, connect changes in enzymes with changes in metabolites, and reconstruct broader alterations in biochemical pathways and cellular functions.</p></article>
+            <article><h3>Pathways and molecular networks</h3><p>Molecular changes are interpreted through pathway enrichment, protein interaction networks, metabolic pathways, functional annotation, and systems-level modelling. These approaches help distinguish isolated molecular effects from coordinated biological programmes.</p></article>
+            <article><h3>Biomarkers and molecular signatures</h3><p>We investigate individual biomarkers as well as multivariate molecular signatures associated with disease states, biological responses, or therapeutic effects. These signatures can provide both practical discriminatory information and insight into the underlying biological mechanisms.</p></article>
+          </div>
+          <p class="method-line">Proteomics · Metabolomics · Multi-omics · Quantitative mass spectrometry · Biomarkers · Pathway analysis · Network biology · Systems biology</p>
+          <a class="back-link" href="#research-title">Back to research overview ↑</a>
+        </div>
+      </section>
+
+      <section id="molecular-mechanisms" class="research-pillar" aria-labelledby="mechanisms-title">
+        <div class="page">
+          <header class="pillar-heading">
+            <p class="eyebrow">Research pillar 02</p>
+            <h2 id="mechanisms-title">Molecular Mechanisms of Disease &amp; Drug Action</h2>
+            <p>Understanding how biological systems respond to disease and chemical perturbation</p>
+          </header>
+          <div class="pillar-intro">
+            <p>Disease and pharmacological response emerge from alterations in interconnected molecular processes rather than from isolated changes in individual proteins or metabolites. We investigate how these processes are reorganized in disease and following exposure to therapeutic agents, xenobiotics, and other chemical perturbations.</p>
+            <p>Experimental biochemistry, cell biology, omics, molecular interaction studies, and computational analysis are combined to determine how molecular perturbations propagate through biological systems. Particular attention is given to adaptive responses, altered metabolism, cellular stress, signalling, protein regulation, and molecular interactions associated with therapeutic efficacy or toxicity.</p>
+            <p>Although the biological systems investigated are diverse, the underlying question is consistent: how does a molecular perturbation produce a measurable biological response, and which mechanisms determine adaptation, dysfunction, resistance, or therapeutic outcome?</p>
+          </div>
+          <div class="theme-columns">
+            <article><h3>Cancer biology and anticancer agents</h3><p>We investigate how cancer cells respond to therapeutic compounds and experimental perturbations at the molecular and systems levels. Proteomic, metabolomic, biochemical, and computational approaches are used to identify altered pathways, cellular stress responses, metabolic reprogramming, and mechanisms associated with drug activity.</p></article>
+            <article><h3>Antimicrobial resistance and MRSA</h3><p>Antimicrobial resistance provides a clear example of biological adaptation to chemical pressure. We investigate how bacterial cells, including methicillin-resistant <em>Staphylococcus aureus</em>, reorganize their proteome, metabolism, transport systems, stress responses, and regulatory pathways following antibiotic exposure.</p><p class="detail">These studies aim to distinguish direct antibiotic effects from adaptive responses and identify molecular processes that may contribute to resistance, tolerance, or therapeutic sensitization.</p></article>
+            <article><h3>Neurobiology and neurodegeneration</h3><p>We investigate molecular processes relevant to neuronal function, neurobiological disease, and pharmacological modulation of neuronal systems. Omics and biochemical approaches are used to characterize changes associated with neuronal state, neurodegenerative processes, and exposure to therapeutic compounds.</p></article>
+            <article><h3>Adverse drug reactions</h3><p>Individual responses to therapeutic agents may result from differences in metabolism, molecular targets, compensatory pathways, and broader physiological context. We investigate molecular signatures and mechanisms associated with adverse drug responses, combining omics data with biochemical and pharmacological interpretation.</p></article>
+            <article><h3>Xenobiotic response and mechanisms of drug action</h3><p>Therapeutic agents and other xenobiotics can be considered controlled perturbations of biological systems. By following molecular responses across proteins, metabolites, pathways, and molecular interactions, we aim to understand both intended pharmacological effects and secondary adaptive or toxic responses.</p></article>
+            <article><h3>From perturbation to mechanism</h3><p>Across these biological systems, the central objective is to move from lists of altered molecules toward mechanistic explanations. Molecular measurements are integrated with biochemical pathways, interaction networks, structural information, and experimental context to reconstruct the processes that connect exposure with biological outcome.</p></article>
+          </div>
+          <p class="method-line">Cancer · Antimicrobial resistance · MRSA · Neurobiology · Neurodegeneration · Adverse drug reactions · Xenobiotic response · Drug mechanisms</p>
+          <a class="back-link" href="#research-title">Back to research overview ↑</a>
+        </div>
+      </section>
+
+      <section id="computational-molecular-biochemistry" class="research-pillar research-pillar-tint" aria-labelledby="computational-title">
+        <div class="page">
+          <header class="pillar-heading">
+            <p class="eyebrow">Research pillar 03</p>
+            <h2 id="computational-title">Computational &amp; Molecular Biochemistry</h2>
+            <p>Connecting molecular structure, interactions, and biological data</p>
+          </header>
+          <div class="pillar-intro">
+            <p>Many biological mechanisms can only be understood by connecting molecular-scale interactions with systems-level observations. We use computational biochemistry and bioinformatics to investigate this connection, combining molecular modelling with computational analysis of proteomic, metabolomic, and other biological data.</p>
+            <p>These approaches span multiple scales. At the molecular level, structural modelling and molecular simulations help explain interactions between proteins, metabolites, drugs, and other small molecules. At the systems level, computational workflows are used to process, integrate, and interpret high-dimensional biological datasets.</p>
+            <p>Increasingly, machine-learning and artificial-intelligence methods provide additional ways to represent complex molecular information, identify patterns in biological data, and integrate knowledge across molecular scales.</p>
+          </div>
+          <div class="theme-columns">
+            <article><h3>Bioinformatics and computational omics</h3><p>We develop and apply computational workflows for quantitative proteomics, metabolomics, annotation, statistical analysis, pathway enrichment, network analysis, visualization, and integration of heterogeneous biological datasets.</p><p class="detail">Workflows are developed when existing tools do not adequately address a specific biological question.</p></article>
+            <article><h3>Molecular modelling</h3><p>Structural and molecular modelling approaches are used to investigate the molecular basis of interactions between proteins, metabolites, therapeutic agents, and other ligands. These studies provide hypotheses that can be compared with experimental biochemical and omics observations.</p></article>
+            <article><h3>Molecular dynamics</h3><p>Molecular dynamics simulations are used to investigate conformational behaviour, molecular recognition, stability, and interaction mechanisms that cannot be fully captured by static structural models.</p></article>
+            <article><h3>Protein–ligand interactions</h3><p>Experimental and computational analysis of protein–ligand interactions provides a molecular-scale view of drug action and biochemical regulation. Docking, molecular simulation, binding analysis, spectroscopy, and complementary biochemical measurements can be integrated to characterize interaction mechanisms.</p></article>
+            <article><h3>Computational systems biology</h3><p>Computational approaches connect individual molecular changes with pathways, networks, and broader biological states. Particular emphasis is placed on integrating quantitative experimental measurements with prior biochemical knowledge rather than treating computational analysis as a purely statistical exercise.</p></article>
+            <article><h3>Artificial intelligence and data-driven molecular biology</h3><p>Machine learning and artificial intelligence provide new methods for representing proteins, metabolites, molecular structures, and complex biological states. We are interested particularly in approaches that complement experimental molecular biology and omics by improving data integration, biological interpretation, and the generation of mechanistic hypotheses.</p><p class="detail">Emerging directions include representation learning for molecular and omics data, biological foundation models, AI-assisted interpretation of proteomic and metabolomic datasets, and computational descriptions of biological states derived from high-dimensional molecular measurements.</p></article>
+          </div>
+          <p class="method-line">Bioinformatics · Computational biochemistry · Molecular modelling · Molecular dynamics · Protein–ligand interactions · Computational omics · Machine learning · Artificial intelligence</p>
+          <a class="back-link" href="#research-title">Back to research overview ↑</a>
+        </div>
       </section>
     </main>
     <script src="site.js"></script>
