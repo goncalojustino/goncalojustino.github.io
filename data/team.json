@@ -4,14 +4,13 @@
       "name": "Gonçalo C. Justino",
       "role": "Principal Investigator",
       "status": "current",
-      "image": "images/ap.jpg",
+      "image": "images/gj.svg",
       "bio": "Researcher in mass spectrometry, biochemical mechanisms, and computational biochemistry."
     },
     {
       "name": "Artem Petrosian",
       "role": "PhD Student",
-      "image": "images/ap.jpg",
-
+      "image": "images/ap.jpeg",
       "status": "current",
       "bio": "Research theme: Scorpionates for cancer therapy."
     },
@@ -19,7 +18,6 @@
       "name": "Luana Kira Rossini",
       "role": "MSc Student",
       "image": "images/lkr.jpg",
-
       "status": "current",
       "bio": "Research theme: Methylphenidate neurotoxicity."
     },
