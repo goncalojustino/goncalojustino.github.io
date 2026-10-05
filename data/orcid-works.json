@@ -1,7 +1,15 @@
 {
   "orcidId": "0000-0003-4828-4738",
-  "updatedAt": "2026-09-28T13:49:36.319Z",
+  "updatedAt": "2026-10-05T14:32:05.497Z",
   "works": [
+    {
+      "sourceId": "doi:10.1016/j.kintcr.2026.100159",
+      "title": "AL amyloidosis masquerading as AA amyloidosis: the diagnostic value of mass spectrometry – a case report",
+      "year": 2026,
+      "journal": "Kidney International Case Reports",
+      "link": "https://doi.org/10.1016/j.kintcr.2026.100159",
+      "type": "journal-article"
+    },
     {
       "sourceId": "doi:10.3390/separations13050134",
       "title": "Bar Adsorptive Microextraction for Trace Determination of Natural and Semi-Synthetic Cannabinoids in Saliva",
