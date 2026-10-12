@@ -1,6 +1,6 @@
 {
   "orcidId": "0000-0003-4828-4738",
-  "updatedAt": "2026-10-05T14:32:05.497Z",
+  "updatedAt": "2026-10-12T15:17:54.894Z",
   "works": [
     {
       "sourceId": "doi:10.1016/j.kintcr.2026.100159",
@@ -363,14 +363,6 @@
       "type": "conference-poster"
     },
     {
-      "sourceId": "orcid:167452969",
-      "title": " Exploring MRSA's drug response: a mass spectrometry multiple omics approach towards new targets",
-      "year": 2023,
-      "journal": "EMBO Young Scientists’ Forum",
-      "link": "",
-      "type": "conference-poster"
-    },
-    {
       "sourceId": "orcid:167452974",
       "title": "A mass spectrometry-based multi-omics approach to explore the mechanisms of drug resistance in methicillin-resistant Staphylococcus aureus",
       "year": 2023,
@@ -433,6 +425,14 @@
       "journal": "",
       "link": "https://doi.org/10.1109/ENBENG58165.2023.10175339",
       "type": "conference-paper"
+    },
+    {
+      "sourceId": "orcid:167452969",
+      "title": "Exploring MRSA's drug response: a mass spectrometry multiple omics approach towards new targets",
+      "year": 2023,
+      "journal": "EMBO Young Scientists’ Forum",
+      "link": "",
+      "type": "conference-poster"
     },
     {
       "sourceId": "doi:10.3390/molecules28145451",
@@ -900,7 +900,7 @@
     },
     {
       "sourceId": "orcid:90090216",
-      "title": "Tea - Chemistry and Pharmacology ",
+      "title": "Tea - Chemistry and Pharmacology",
       "year": 2020,
       "journal": "InTech Open",
       "link": "",
@@ -1691,19 +1691,19 @@
       "type": "journal-article"
     },
     {
-      "sourceId": "doi:10.20944/preprints202207.0379.v1",
-      "title": " Leukotrienes vs. Montelukast – Activity, Metabolism, and Toxicity Hints for Repurposing  ",
-      "year": null,
-      "journal": "",
-      "link": "https://doi.org/10.20944/preprints202207.0379.v1",
-      "type": "working-paper"
-    },
-    {
       "sourceId": "doi:10.20944/preprints202306.0205.v1",
       "title": "Exploring the Mechanisms Behind the Anti-tumoral Effects of Model C-scorpionate Complexes",
       "year": null,
       "journal": "",
       "link": "https://doi.org/10.20944/preprints202306.0205.v1",
+      "type": "working-paper"
+    },
+    {
+      "sourceId": "doi:10.20944/preprints202207.0379.v1",
+      "title": "Leukotrienes vs. Montelukast – Activity, Metabolism, and Toxicity Hints for Repurposing",
+      "year": null,
+      "journal": "",
+      "link": "https://doi.org/10.20944/preprints202207.0379.v1",
       "type": "working-paper"
     },
     {
