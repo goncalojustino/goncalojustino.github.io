@@ -6,7 +6,6 @@
   const identifiers = document.querySelector('#cv-identifiers');
   const navigation = document.querySelector('#cv-section-nav');
   const sections = document.querySelector('#cv-sections');
-  const summary = document.querySelector('#cv-summary');
   const newestFirst = (left, right) => {
     const year = (item) => Number(String(item.date || '').match(/\d{4}/)?.[0] || 0);
     return year(right) - year(left) || String(left.title || '').localeCompare(String(right.title || ''));
@@ -24,7 +23,6 @@
   };
 
   identifiers.innerHTML = data.identifiers.map((item) => `<a href="${escape(item.url)}" target="_blank" rel="noreferrer">${escape(item.label)} ↗</a>`).join('');
-  summary.textContent = data.updated;
   navigation.innerHTML = data.sections.map((section) => `<a href="#${escape(section.id)}">${escape(section.label)}</a>`).join('');
   sections.innerHTML = data.sections.map((section) => {
     return `<details id="${escape(section.id)}" class="cv-section"><summary><span class="cv-section-title">${escape(section.label)}</span></summary><p class="cv-section-intro">${escape(section.intro || '')}</p>${section.groups.map((group) => { const entries = entriesFor(group).sort(newestFirst); return `<details class="cv-group"><summary>${escape(group.label)}</summary><div class="cv-entry-list">${entries.map(entry).join('') || '<p class="cv-empty">No entries at present.</p>'}</div></details>`; }).join('')}</details>`;

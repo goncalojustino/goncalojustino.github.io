@@ -3,7 +3,6 @@
   so the prototype also works when opened with file:// in a browser.
 */
 window.CV_DATA = {
-  updated: "Structured from the formal CV dated 2 November 2025",
   profile: {
     name: "José Gonçalo Deira Duarte de Campos Justino",
     role: "Assistant Professor (with tenure) in Microbiology and Biochemistry · Escola Superior de Tecnologia de Setúbal · Universidade Politécnica de Setúbal"

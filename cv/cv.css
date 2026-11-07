@@ -1,10 +1,6 @@
 .cv-page { min-width: 320px; }
-.cv-site-header { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 1.15rem max(5vw, 2rem); border-bottom: 1px solid var(--line); background: #fbfcfdf2; }
-.cv-brand { margin: 0; color: var(--ink); font-size: 1.15rem; font-weight: 800; }
-.cv-brand span { color: var(--olive); }
-.cv-status { margin: 0; color: var(--muted); font-size: .8rem; font-weight: 700; }
 .cv-hero { max-width: var(--max); margin: auto; padding: clamp(3rem, 8vw, 6.5rem) 5vw 3rem; }
-.cv-hero h1 { max-width: 8ch; font-size: clamp(3.5rem, 7vw, 6.6rem); }
+.cv-hero h1 { max-width: none; font-size: clamp(1.8rem, 6vw, 6.2rem); font-style: italic; letter-spacing: -.06em; white-space: nowrap; }
 .cv-detailed-note { max-width: 67ch; margin: 1.4rem 0 0; color: var(--muted); font-size: 1.07rem; }
 .cv-identifiers { display: flex; flex-wrap: wrap; gap: .55rem; margin-top: 1.5rem; }
 .cv-identifiers a { padding: .48rem .72rem; border: 1px solid var(--line); border-radius: 99px; color: var(--olive); background: #fff; font-size: .78rem; font-weight: 800; text-decoration: none; }
@@ -12,8 +8,7 @@
 .cv-section-nav { display: flex; gap: .65rem; overflow: auto; max-width: var(--max); margin: 0 auto; padding: 1rem 5vw; border-block: 1px solid var(--line); white-space: nowrap; }
 .cv-section-nav a { padding: .36rem .65rem; border-radius: 99px; color: var(--muted); font-size: .82rem; font-weight: 800; text-decoration: none; }
 .cv-section-nav a:hover { color: var(--olive); background: var(--soft); }
-.cv-tools { display: flex; justify-content: space-between; align-items: center; gap: 1rem; max-width: var(--max); margin: 0 auto; padding: 2.5rem 5vw 1rem; }
-.cv-summary { margin: 0; color: var(--muted); font-size: .9rem; }
+.cv-tools { display: flex; justify-content: flex-end; align-items: center; gap: 1rem; max-width: var(--max); margin: 0 auto; padding: 2.5rem 5vw 1rem; }
 .cv-tools button { padding: .45rem .7rem; border: 1px solid var(--line); border-radius: 99px; color: var(--olive); background: transparent; font: inherit; font-size: .78rem; font-weight: 800; cursor: pointer; }
 .cv-tools button:hover { border-color: var(--olive); background: var(--soft); }
 .cv-sections { max-width: var(--max); margin: auto; padding: 0 5vw 4rem; }
@@ -42,7 +37,7 @@
 .cv-entry ul:not(.cv-tags) li + li { margin-top: .28rem; }
 .cv-empty { padding: 1rem 0 1.5rem; color: var(--muted); }
 @media (max-width: 700px) {
-  .cv-site-header, .cv-tools { align-items: flex-start; flex-direction: column; }
+  .cv-tools { align-items: flex-start; flex-direction: column; }
   .cv-entry { grid-template-columns: 1fr; gap: .3rem; }
   .cv-entry-date { margin-top: .25rem; }
 }
