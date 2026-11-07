@@ -25,7 +25,8 @@
   identifiers.innerHTML = data.identifiers.map((item) => `<a href="${escape(item.url)}" target="_blank" rel="noreferrer">${escape(item.label)} ↗</a>`).join('');
   navigation.innerHTML = data.sections.map((section) => `<a href="#${escape(section.id)}">${escape(section.label)}</a>`).join('');
   sections.innerHTML = data.sections.map((section) => {
-    return `<details id="${escape(section.id)}" class="cv-section"><summary><span class="cv-section-title">${escape(section.label)}</span></summary><p class="cv-section-intro">${escape(section.intro || '')}</p>${section.groups.map((group) => { const entries = entriesFor(group).sort(newestFirst); return `<details class="cv-group"><summary>${escape(group.label)}</summary><div class="cv-entry-list">${entries.map(entry).join('') || '<p class="cv-empty">No entries at present.</p>'}</div></details>`; }).join('')}</details>`;
+    const open = section.id === 'teaching' ? ' open' : '';
+    return `<details id="${escape(section.id)}" class="cv-section"${open}><summary><span class="cv-section-title">${escape(section.label)}</span></summary><p class="cv-section-intro">${escape(section.intro || '')}</p>${section.groups.map((group) => { const entries = entriesFor(group).sort(newestFirst); return `<details class="cv-group"><summary>${escape(group.label)}</summary><div class="cv-entry-list">${entries.map(entry).join('') || '<p class="cv-empty">No entries at present.</p>'}</div></details>`; }).join('')}</details>`;
   }).join('');
   document.querySelector('#cv-expand').addEventListener('click', () => document.querySelectorAll('details').forEach((detail) => { detail.open = true; }));
   document.querySelector('#cv-collapse').addEventListener('click', () => document.querySelectorAll('details').forEach((detail) => { detail.open = false; }));
