@@ -17,6 +17,10 @@ body { margin: 0; background: var(--paper); color: var(--ink); font-family: Robo
 .site-nav { display: flex; gap: 1.45rem; align-items: center; }
 .site-nav a { color: var(--muted); font-weight: 700; text-decoration: none; }
 .site-nav a:hover { color: var(--olive); }
+.site-nav-menu { position: relative; }
+.site-subnav { position: absolute; top: calc(100% + .15rem); left: -.7rem; z-index: 20; min-width: 9rem; padding: .45rem .7rem; border: 1px solid var(--line); border-radius: 10px; background: #fbfcfd; box-shadow: 0 9px 20px #20213e1c; opacity: 0; pointer-events: none; transform: translateY(-.25rem); transition: opacity .16s ease, transform .16s ease; visibility: hidden; }
+.site-subnav a { display: block; color: var(--olive); font-size: .86rem; white-space: nowrap; }
+.site-nav-menu:hover .site-subnav, .site-nav-menu:focus-within .site-subnav { opacity: 1; pointer-events: auto; transform: translateY(0); visibility: visible; }
 .site-footer { margin-top: 5rem; padding: 1.25rem; border-top: 1px solid var(--line); background: var(--soft); color: var(--muted); font-size: .9rem; text-align: center; }
 .page { max-width: var(--max); margin: auto; padding: clamp(3rem, 8vw, 7rem) 5vw; }
 .eyebrow { margin: 0 0 .75rem; color: var(--olive); font-size: .8rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
@@ -68,6 +72,7 @@ h2 { letter-spacing: -.04em; line-height: 1.12; }
   .site-shell { align-items: flex-start; flex-direction: column; gap: .75rem; }
   .site-nav { width: 100%; gap: .85rem; overflow: auto; white-space: nowrap; }
   .site-nav a { font-size: .85rem; }
+  .site-subnav { left: -.45rem; }
   .hero, .grid, .alumni-group { grid-template-columns: 1fr; }
   .contact-card p { white-space: normal; }
   .page { padding-top: 3rem; }
